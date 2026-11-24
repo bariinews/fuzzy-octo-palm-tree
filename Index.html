@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Barii News</title>
+<meta name="description" content="Barii News — Odeeffannoo dhugaa: fayyaa, saayinsii fi teeknooloojii, hawaasa, siyaasa, dinagdee, aadaa, barnoota, ispoortii fi addunyaa.">
+<meta name="theme-color" content="#0a0a0a">
+<meta property="og:title" content="Barii News">
+<meta property="og:description" content="Odeeffannoo Dhugaa, Barii Haaraa">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='31' fill='%230a0a0a'/%3E%3Ccircle cx='32' cy='35' r='13' fill='%23d7141a'/%3E%3Cpath d='M4 35h56v12H4z' fill='%230a0a0a'/%3E%3Ccircle cx='32' cy='36' r='4' fill='%23fff'/%3E%3Cpath d='M25 50c0-7 3-10 7-10s7 3 7 10z' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+/* ================= BARII NEWS — ⚫ 🔴 ⚪ ================= */
+:root{--k:#0a0a0a;--r:#d7141a;--bg:#fff;--bg2:#f4f4f4;--tx:#111;--mut:#676767;--ln:#e6e6e6;
+--serif:Georgia,"Times New Roman","Noto Serif","Noto Serif Ethiopic",Nyala,serif;
+--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Noto Sans Ethiopic",Nyala,Arial,sans-serif;
+--max:1240px;--rad:6px}
+[data-theme=dark]{--bg:#0b0b0b;--bg2:#161616;--tx:#f1f1f1;--mut:#a3a3a3;--ln:#252525}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 var(--sans);-webkit-font-smoothing:antialiased;top:0!important;position:static!important}
+body.lock{overflow:hidden}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit}
+img{max-width:100%;display:block}
+.ic{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+:focus-visible{outline:2px solid var(--r);outline-offset:2px}
+
+/* Google Translate UI dhoksuu */
+#gt,.goog-te-banner-frame,.skiptranslate>iframe,iframe.skiptranslate,#goog-gt-tt,.goog-te-balloon-frame,.VIpgJd-ZVi9od-ORHb-OEVmcd,.VIpgJd-ZVi9od-aZ2wEe-wOHMyf{display:none!important}
+.goog-text-highlight{background:none!important;box-shadow:none!important}
+font{background:transparent!important;box-shadow:none!important}
+
+/* -------- Mata (Header) -------- */
+.hd{position:sticky;top:0;z-index:40;background:var(--k);color:#fff}
+.hd-in{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:6px;padding:0 10px;height:60px}
+.ib{width:42px;height:42px;display:grid;place-items:center;border:0;background:transparent;color:inherit;border-radius:50%;cursor:pointer;flex:none}
+.ib:hover{background:rgba(255,255,255,.1)}
+.ib svg{width:22px;height:22px}
+.logo{display:flex;align-items:center;gap:9px;margin-right:auto;min-width:0}
+[dir=rtl] .logo{margin-right:0;margin-left:auto}
+.logo svg{width:40px;height:40px;flex:none}
+.wm{font:900 21px/1 var(--sans);letter-spacing:1.5px;white-space:nowrap}
+.wm b{color:var(--r);font-weight:900}
+.lb{display:flex;align-items:center;gap:6px;height:34px;padding:0 11px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:transparent;color:#fff;font:700 12.5px var(--sans);cursor:pointer;text-transform:uppercase;flex:none}
+.lb svg{width:16px;height:16px}
+.lb:hover{border-color:#fff}
+.sbar{display:none;background:var(--k);padding:0 12px 12px}
+.sbar.on{display:block}
+.sbar input{display:block;max-width:760px;margin:0 auto;width:100%;height:46px;border-radius:999px;border:0;padding:0 20px;font:16px var(--sans);background:#fff;color:#111}
+.nav{background:var(--bg);border-bottom:1px solid var(--ln);position:sticky;top:60px;z-index:39}
+.nav-in{max-width:var(--max);margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none;padding:0 4px}
+.nav-in::-webkit-scrollbar{display:none}
+.nav a{flex:none;padding:12px 12px 10px;font:700 13.5px var(--sans);border-bottom:3px solid transparent;white-space:nowrap}
+.nav a:hover{color:var(--r)}
+.nav a.on{border-color:var(--r);color:var(--r)}
+@media(min-width:1024px){.hd-in{height:74px;padding:0 16px}.nav{top:74px}.logo svg{width:50px;height:50px}.wm{font-size:28px}.nav-in{justify-content:center}}
+
+.tick{background:var(--r);color:#fff;font:600 14px var(--sans)}
+.tick-in{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:12px;padding:0 12px;height:38px}
+.tick-l{background:var(--k);padding:3px 10px;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;font-weight:800;flex:none}
+.tick-t{overflow:hidden;white-space:nowrap;flex:1;-webkit-mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);mask-image:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent)}
+.tick-t span{display:inline-block;padding-left:100%;animation:tk 55s linear infinite}
+.tick-t a{margin-right:52px}
+.tick-t a::before{content:"";display:inline-block;width:6px;height:6px;background:#fff;margin-right:9px;vertical-align:2px}
+@keyframes tk{to{transform:translateX(-100%)}}
+@media(prefers-reduced-motion:reduce){.tick-t span{animation:none;padding-left:0}}
+.off{display:none;background:#222;color:#fff;text-align:center;font:13px var(--sans);padding:6px}
+
+/* -------- Qabiyyee -------- */
+main{max-width:var(--max);margin:0 auto;padding:18px 14px 40px;min-height:62vh}
+.dl{font:700 11.5px var(--sans);text-transform:uppercase;letter-spacing:1.4px;color:var(--mut);margin:0 0 14px}
+.top{display:grid;gap:24px}
+@media(min-width:900px){.top{grid-template-columns:1.8fr 1fr;gap:30px}}
+.lead{position:relative;display:block;border-radius:var(--rad);overflow:hidden;background:var(--k);color:#fff;min-height:380px}
+@media(min-width:900px){.lead{min-height:500px}}
+.lead .cv{position:absolute;inset:0;aspect-ratio:auto;height:100%;border-radius:0}
+.lead .cv{align-items:start;padding-top:9%}
+.lead .cv svg{width:22%;max-width:110px}
+.lead-t{position:absolute;left:0;right:0;bottom:0;padding:90px 20px 22px;background:linear-gradient(transparent,rgba(0,0,0,.94) 62%)}
+.lead h2{font:700 clamp(25px,3.5vw,40px)/1.13 var(--serif);margin:10px 0 8px;letter-spacing:-.3px}
+.lead p{color:#d6d6d6;margin:0 0 10px;font-size:15.5px;max-width:640px}
+.lead .mt{color:#aaa}
+.lead:hover h2{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.kick{display:inline-block;background:var(--r);color:#fff;font:800 10.5px var(--sans);letter-spacing:1.4px;text-transform:uppercase;padding:4px 8px}
+.nl{display:grid;grid-template-columns:40px 1fr;gap:6px;padding:14px 0;border-bottom:1px solid var(--ln)}
+.nl:last-child{border:0}
+.num{font:700 30px/1 var(--serif);color:var(--r)}
+.nl h3{font:700 17px/1.3 var(--serif);margin:3px 0 4px}
+.nl:hover h3{color:var(--r)}
+.sh{display:flex;align-items:center;justify-content:space-between;gap:10px;margin:44px 0 16px;padding-top:10px;border-top:3px solid var(--tx)}
+.sh.s0{margin-top:0}
+.sh h2{font:800 14px var(--sans);text-transform:uppercase;letter-spacing:1.6px;display:flex;align-items:center;gap:10px;margin:0}
+.sh h2::before{content:"";width:11px;height:11px;background:var(--r);flex:none}
+.sh a{font:700 12.5px var(--sans);color:var(--r);white-space:nowrap}
+.grid{display:grid;gap:26px 22px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{display:flex;flex-direction:column;gap:10px}
+.card .cv{border-radius:var(--rad)}
+.cb{display:flex;flex-direction:column;gap:5px;min-width:0}
+.card h3{font:700 19px/1.28 var(--serif);margin:0}
+.card:hover h3{color:var(--r)}
+.card p{color:var(--mut);font-size:14.5px;margin:0;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tg{font:800 10.5px var(--sans);letter-spacing:1.3px;text-transform:uppercase;color:var(--r)}
+.mt{font:12.5px var(--sans);color:var(--mut)}
+@media(max-width:640px){
+ .grid{grid-template-columns:1fr;gap:0}
+ .card{flex-direction:row-reverse;gap:12px;padding:15px 0;border-bottom:1px solid var(--ln);align-items:flex-start}
+ .card .cv{width:104px;flex:none;aspect-ratio:1}
+ .card .cv svg{width:44%}
+ .card h3{font-size:17px}
+ .card p{display:none}
+ .cb{flex:1}
+}
+.cv{position:relative;aspect-ratio:16/9;overflow:hidden;background:var(--k);display:grid;place-items:center;color:#fff}
+.cv::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at var(--x,70%) var(--y,30%),rgba(215,20,26,.92),rgba(215,20,26,0) 60%),repeating-linear-gradient(135deg,rgba(255,255,255,.055) 0 1px,transparent 1px 12px)}
+.cv svg{position:relative;width:30%;max-width:120px;height:auto;aspect-ratio:1;stroke-width:1.15}
+.cv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.more{display:flex;margin:28px auto 0;height:44px;padding:0 26px;align-items:center;border:2px solid var(--tx);background:transparent;color:var(--tx);font:800 12.5px var(--sans);letter-spacing:1.2px;text-transform:uppercase;cursor:pointer}
+.more:hover{background:var(--tx);color:var(--bg)}
+.ph{display:flex;align-items:center;gap:14px;margin:6px 0 24px;padding-bottom:18px;border-bottom:3px solid var(--tx)}
+.ph .pi{width:56px;height:56px;background:var(--r);color:#fff;display:grid;place-items:center;flex:none}
+.ph .pi svg{width:30px;height:30px}
+.ph h1{font:700 clamp(26px,4vw,40px)/1.1 var(--serif);margin:0}
+.ph p{margin:4px 0 0;color:var(--mut);font-size:14px}
+.empty{text-align:center;padding:70px 14px;color:var(--mut)}
+.empty svg{width:64px;height:64px;color:var(--r);margin-bottom:10px}
+.empty h2{font:700 24px var(--serif);color:var(--tx);margin:0 0 6px}
+
+/* -------- Miilla (Footer) -------- */
+footer{background:var(--k);color:#a9a9a9;margin-top:30px}
+.ft{max-width:var(--max);margin:0 auto;padding:28px 14px 20px}
+.ft-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-bottom:18px;border-bottom:1px solid #222}
+.ft-brand{display:flex;align-items:center;gap:10px;color:#fff}
+.ft-brand svg{width:40px;height:40px}
+.ft-brand small{display:block;color:#999;font-size:12px;margin-top:2px}
+.soc{display:flex;gap:8px}
+.soc a{width:34px;height:34px;border:1px solid #333;border-radius:50%;display:grid;place-items:center;color:#fff;font:800 11px var(--sans)}
+.soc a:hover{background:var(--r);border-color:var(--r)}
+.ft-cats{display:flex;flex-wrap:wrap;gap:6px 18px;padding:16px 0;border-bottom:1px solid #222;font:700 13px var(--sans)}
+.ft-cats a{color:#e6e6e6}
+.ft-cats a:hover{color:var(--r)}
+.ft-bot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px;padding-top:14px;font-size:12px}
+.ft-links{display:flex;flex-wrap:wrap;gap:4px 16px}
+.ft-links button{background:none;border:0;color:#a9a9a9;font:12px var(--sans);cursor:pointer;padding:2px 0}
+.ft-links button:hover{color:#fff}
+
+/* -------- Menu (Drawer) -------- */
+.scrim{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:70;opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.on{opacity:1;pointer-events:auto}
+.drw{position:fixed;top:0;bottom:0;left:0;width:min(86vw,340px);background:var(--k);color:#fff;z-index:71;transform:translateX(-102%);transition:transform .28s cubic-bezier(.2,.8,.2,1);display:flex;flex-direction:column;overflow-y:auto;overscroll-behavior:contain}
+.drw.on{transform:none}
+.drw-h{display:flex;align-items:center;justify-content:space-between;padding:10px 8px 10px 16px;border-bottom:1px solid #222;min-height:60px}
+.drw-h .wm{font-size:19px}
+.drw-q{padding:14px 16px 6px}
+.drw-q input{width:100%;height:42px;border-radius:999px;border:1px solid #333;background:#151515;color:#fff;padding:0 16px;font:15px var(--sans)}
+.drw nav{padding:6px 0}
+.drw nav a{display:flex;align-items:center;gap:14px;padding:12px 18px;font:600 15px var(--sans);border-left:3px solid transparent}
+.drw nav a:hover{background:#141414}
+.drw nav a.on{border-color:var(--r);background:#151515;color:#fff}
+.drw nav svg{width:20px;height:20px;opacity:.85}
+.drw-s{padding:16px;border-top:1px solid #222}
+.drw-s h6{font:800 10.5px var(--sans);letter-spacing:1.6px;text-transform:uppercase;color:#8a8a8a;margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips button{height:34px;padding:0 13px;border-radius:999px;border:1px solid #333;background:transparent;color:#fff;font:600 13px var(--sans);cursor:pointer}
+.chips button.on{background:var(--r);border-color:var(--r)}
+.drw-small{display:flex;flex-wrap:wrap;gap:6px 16px}
+.drw-small button{background:none;border:0;color:#9a9a9a;font:13px var(--sans);cursor:pointer;padding:2px 0}
+.drw-small button:hover{color:#fff}
+.tgl{display:flex;align-items:center;justify-content:space-between;width:100%;background:none;border:0;color:#fff;font:600 14px var(--sans);cursor:pointer;padding:0}
+.tgl i{width:42px;height:24px;border-radius:999px;background:#333;position:relative;transition:.2s}
+.tgl i::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:.2s}
+[data-theme=dark] .tgl i{background:var(--r)}
+[data-theme=dark] .tgl i::after{left:21px}
+
+/* -------- Modal xiqqaa (Waa'ee Keenya, Nu Qunnamaa, Afaan) -------- */
+.mdl{position:fixed;inset:0;z-index:80;display:none;align-items:flex-end;justify-content:center;background:rgba(0,0,0,.6)}
+.mdl.on{display:flex}
+.mdl-b{position:relative;background:var(--bg);color:var(--tx);width:100%;max-width:600px;max-height:86vh;overflow-y:auto;overscroll-behavior:contain;border-radius:16px 16px 0 0;padding:26px 20px calc(26px + env(safe-area-inset-bottom));animation:up .25s ease;border-top:4px solid var(--r)}
+@media(min-width:700px){.mdl{align-items:center}.mdl-b{border-radius:10px}}
+.mdl-x{position:absolute;top:8px;right:8px;color:var(--tx)}
+[dir=rtl] .mdl-x{right:auto;left:8px}
+.mdl-x:hover{background:var(--bg2)}
+.mdl h2{font:700 25px/1.2 var(--serif);margin:0 40px 4px 0}
+.mdl .sub{color:var(--mut);margin:0 0 6px;font-size:14px}
+.mdl h3{font:800 11.5px var(--sans);text-transform:uppercase;letter-spacing:1.4px;color:var(--r);margin:22px 0 6px}
+.mdl p,.mdl li{font-size:15px;line-height:1.65;margin:0 0 8px}
+.mdl ul{padding-left:18px;margin:0}
+.vals{display:flex;flex-wrap:wrap;gap:6px}
+.vals span{border:1px solid var(--ln);padding:5px 11px;border-radius:999px;font:600 13px var(--sans)}
+.clist a,.clist div{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--ln);font-weight:600}
+.clist i{width:36px;height:36px;border-radius:50%;background:var(--k);color:#fff;display:grid;place-items:center;font-style:normal;font-size:15px;flex:none}
+.langs{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px;margin-top:14px}
+.langs button{padding:11px 13px;border:1px solid var(--ln);background:var(--bg);color:var(--tx);border-radius:8px;font:600 14px var(--sans);text-align:start;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.langs button:hover{border-color:var(--tx)}
+.langs button.on{border-color:var(--r);background:var(--r);color:#fff}
+.langs small{font-size:10px;opacity:.7;text-transform:uppercase}
+.acc{margin-top:14px;border-top:1px solid var(--ln)}
+.acc details{border-bottom:1px solid var(--ln)}
+.acc summary{list-style:none;cursor:pointer;padding:14px 30px 14px 0;font:700 16px var(--serif);position:relative}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"+";position:absolute;right:4px;top:10px;font:400 24px var(--sans);color:var(--r)}
+.acc details[open] summary::after{content:"\2212"}
+.acc details>div{padding:0 0 12px}
+.aclose{text-align:center;font:700 17px var(--serif);margin:22px 0 12px!important}
+.mlogo{display:flex;align-items:center;gap:14px;margin:4px 0 6px}
+.mlogo svg{width:64px;height:64px;flex:none}
+
+/* -------- Dubbisaa (Reader) — oduu qofa -------- */
+.rd{position:fixed;inset:0;z-index:90;background:var(--bg);overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;display:none}
+.rd.on{display:block;animation:up .28s ease}
+@keyframes up{from{transform:translateY(26px);opacity:0}to{transform:none;opacity:1}}
+.rd-p{position:fixed;top:0;left:0;height:3px;background:var(--r);width:0;z-index:93}
+.rd-x{position:fixed;top:calc(10px + env(safe-area-inset-top));right:12px;z-index:93;width:44px;height:44px;border-radius:50%;border:0;background:rgba(10,10,10,.85);color:#fff;display:grid;place-items:center;cursor:pointer;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
+[dir=rtl] .rd-x{right:auto;left:12px}
+.rd-x svg{width:22px;height:22px}
+.rd-in{max-width:720px;margin:0 auto;padding:66px 20px 150px;font-size:var(--fs,19px)}
+.rd h1{font:700 clamp(28px,5.6vw,46px)/1.13 var(--serif);margin:14px 0 14px;letter-spacing:-.4px}
+.rd .rs{font:400 1.07em/1.55 var(--serif);color:var(--mut);margin:0 0 18px}
+.rd .rm{font:13px var(--sans);color:var(--mut);padding:12px 0;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln);display:flex;flex-wrap:wrap;gap:4px 16px}
+.rd .rm b{color:var(--tx)}
+.rd .cv{margin:24px 0;border-radius:var(--rad)}
+.rb{font-family:var(--serif);line-height:1.8}
+.rb p{margin:0 0 1.15em}
+.rb h2{font:700 1.25em/1.3 var(--serif);margin:1.6em 0 .5em}
+.rb blockquote{margin:1.6em 0;padding:2px 0 2px 20px;border-left:4px solid var(--r);font-size:1.14em;font-style:italic}
+.rb>p:first-of-type::first-letter{float:left;font-size:3.5em;line-height:.82;padding:.06em .1em 0 0;color:var(--r);font-weight:700}
+.ai{background:var(--bg2);border-left:4px solid var(--r);padding:14px 16px;margin:22px 0;border-radius:0 8px 8px 0;font:15.5px/1.6 var(--sans)}
+.ai b{display:flex;gap:6px;align-items:center;font-size:11.5px;letter-spacing:1.3px;text-transform:uppercase;color:var(--r);margin-bottom:8px}
+.ai b svg{width:16px;height:16px}
+.ai ul{margin:0;padding-left:18px}
+.ai li{margin:0 0 6px}
+.ai small{display:block;color:var(--mut);font-size:12px;margin-top:6px}
+.rend{margin-top:40px;padding-top:18px;border-top:3px solid var(--tx);display:flex;flex-wrap:wrap;gap:8px;align-items:center;font:700 13px var(--sans)}
+.rend>span{margin-right:4px;text-transform:uppercase;letter-spacing:1px;font-size:11.5px}
+.pill{display:inline-flex;align-items:center;gap:6px;height:38px;padding:0 15px;border-radius:999px;border:1px solid var(--ln);background:var(--bg);color:var(--tx);font:700 13px var(--sans);cursor:pointer}
+.pill:hover{background:var(--tx);color:var(--bg);border-color:var(--tx)}
+.dock{position:fixed;left:50%;bottom:calc(16px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:93;display:flex;gap:2px;background:rgba(10,10,10,.92);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:5px;border-radius:999px;box-shadow:0 10px 28px rgba(0,0,0,.28);transition:transform .25s,opacity .25s}
+.dock.hide{transform:translate(-50%,110px);opacity:0}
+.dock button{display:flex;align-items:center;gap:7px;height:42px;padding:0 15px;border:0;border-radius:999px;background:transparent;color:#fff;font:700 13px var(--sans);cursor:pointer;white-space:nowrap}
+.dock button:hover{background:rgba(255,255,255,.12)}
+.dock button.on{background:var(--r)}
+.dock svg{width:18px;height:18px}
+@media(max-width:480px){.dock button span{display:none}.dock button{padding:0 15px}}
+
+/* -------- Miidiyaa: viidiyoo, suuraalee, sagalee -------- */
+.vbox{position:relative;aspect-ratio:16/9;background:#000;border-radius:var(--rad);overflow:hidden;margin:24px 0}
+.vbox.tall{aspect-ratio:9/16;max-width:360px;margin-left:auto;margin-right:auto}
+.vbox iframe,.vbox video{position:absolute;inset:0;width:100%;height:100%;border:0;background:#000}
+.vplay{position:absolute;inset:0;width:100%;border:0;padding:0;cursor:pointer;background:#111 center/cover no-repeat;display:grid;place-items:center}
+.vplay::before{content:"";position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.65))}
+.vplay i{position:relative;width:74px;height:74px;border-radius:50%;background:var(--r);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.45)}
+.vplay i::after{content:"";border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:7px}
+.vplay span{position:absolute;left:14px;bottom:12px;color:#fff;font:700 13px var(--sans);letter-spacing:.5px}
+.vlink{display:flex;align-items:center;gap:10px;margin:24px 0}
+.bv{position:absolute;left:8px;bottom:8px;z-index:1;background:var(--r);color:#fff;font:800 10.5px var(--sans);letter-spacing:1px;padding:4px 8px;border-radius:4px}
+.bg{position:absolute;right:8px;bottom:8px;z-index:1;background:rgba(0,0,0,.75);color:#fff;font:700 11px var(--sans);padding:4px 8px;border-radius:4px}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px;margin:24px 0}
+.gal button{padding:0;border:0;aspect-ratio:1;overflow:hidden;border-radius:6px;cursor:zoom-in;background:#111}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .2s}
+.gal button:hover img{transform:scale(1.05)}
+.aud{width:100%;margin:20px 0}
+.lbx{position:fixed;inset:0;z-index:96;background:rgba(0,0,0,.95);display:none;align-items:center;justify-content:center;padding:16px}
+.lbx.on{display:flex}
+.lbx img{max-width:100%;max-height:86vh;border-radius:4px}
+.lbx .ib{position:absolute;top:12px;right:12px;background:rgba(255,255,255,.15);color:#fff}
+.lbx .nx,.lbx .pv{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.15);color:#fff;border:0;width:46px;height:46px;border-radius:50%;font-size:26px;cursor:pointer}
+.lbx .nx{right:10px}.lbx .pv{left:10px}
+.lbx small{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#ccc;font:13px var(--sans)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--k);color:#fff;padding:10px 18px;border-radius:999px;font:600 14px var(--sans);opacity:0;transition:opacity .2s;pointer-events:none;z-index:99;border:1px solid #333;max-width:90vw;text-align:center}
+.toast.on{opacity:1}
+.prev{background:var(--r);color:#fff;text-align:center;font:700 12.5px var(--sans);padding:8px}
+.prev a{color:#fff;text-decoration:underline;white-space:nowrap}
+@media print{.hd,.nav,.tick,footer,.dock,.rd-x{display:none!important}.rd{position:static;display:block}}
+</style>
+</head>
+<body>
+
+<!-- ============ ASXAA (LOGO) fi MALLATTOOLEE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="logo" viewBox="0 0 64 64">
+  <clipPath id="lgc"><circle cx="32" cy="32" r="29.2"/></clipPath>
+  <circle cx="32" cy="32" r="31.6" fill="#0a0a0a"/>
+  <circle cx="32" cy="32" r="30.2" fill="none" stroke="#fff" stroke-width="1.3"/>
+  <g clip-path="url(#lgc)">
+   <path d="M32 16V8M22.5 19l-3.6-6.2M41.5 19l3.6-6.2M15.5 26l-6.6-3.6M48.5 26l6.6-3.6M13 34H5M51 34h8" stroke="#d7141a" stroke-width="2.4" stroke-linecap="round"/>
+   <circle cx="32" cy="34.5" r="13" fill="#d7141a"/>
+   <rect y="34.5" width="64" height="30" fill="#0a0a0a"/>
+   <path d="M3 34.5h58" stroke="#fff" stroke-width="1.1"/>
+   <circle cx="18" cy="38" r="3.6" fill="#d7141a"/><path d="M11.5 52.5c0-6.5 2.9-10.2 6.5-10.2s6.5 3.7 6.5 10.2z" fill="#d7141a"/>
+   <circle cx="46" cy="38" r="3.6" fill="#d7141a"/><path d="M39.5 52.5c0-6.5 2.9-10.2 6.5-10.2s6.5 3.7 6.5 10.2z" fill="#d7141a"/>
+   <circle cx="32" cy="35" r="4.2" fill="#fff"/><path d="M24.3 52.5c0-8 3.4-12.6 7.7-12.6s7.7 4.6 7.7 12.6z" fill="#fff"/>
+   <path d="M22.3 46l3.6-1.4M41.7 46l-3.6-1.4" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+   <rect y="52.5" width="64" height="12" fill="#fff"/>
+   <path d="M0 59l4-4 4 4 4-4 4 4 4-4 4 4 4-4 4 4 4-4 4 4 4-4 4 4 4-4 4 4 4-4 4 4" fill="none" stroke="#d7141a" stroke-width="1.8"/>
+  </g>
+ </symbol>
+ <symbol id="i-fayyaa" viewBox="0 0 24 24"><path d="M20.8 8.6a5 5 0 0 0-8.8-3.2A5 5 0 0 0 3.2 8.6c0 5.4 8.8 10.9 8.8 10.9s8.8-5.5 8.8-10.9z"/><path d="M3.6 12h4l2-3 3 6 2-3h5.4"/></symbol>
+ <symbol id="i-saayinsii" viewBox="0 0 24 24"><circle cx="12" cy="12" r="1.4"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></symbol>
+ <symbol id="i-hawaasa" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><circle cx="17" cy="9" r="2.6"/><path d="M16 13.6c3.2-.4 5.6 2 5.6 5.4"/></symbol>
+ <symbol id="i-siyaasa" viewBox="0 0 24 24"><path d="M3 9l9-5 9 5M4 9h16M5.5 9v9M10 9v9M14 9v9M18.5 9v9M3 20.5h18"/></symbol>
+ <symbol id="i-dinagdee" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 6-7"/><path d="M16 7h4v4"/></symbol>
+ <symbol id="i-aadaa" viewBox="0 0 24 24"><path d="M12 21v-7.5"/><path d="M12 13.5c-5 0-9-1.9-9-4.8S7 3.5 12 3.5s9 2.3 9 5.2-4 4.8-9 4.8z"/><path d="M8.5 21h7M12 16l-3-2.4M12 16l3-2.4"/></symbol>
+ <symbol id="i-barnoota" viewBox="0 0 24 24"><path d="M12 6.2C10 4.7 7 4 3 4v14c4 0 7 .7 9 2.2 2-1.5 5-2.2 9-2.2V4c-4 0-7 .7-9 2.2z"/><path d="M12 6.2v14"/></symbol>
+ <symbol id="i-ispoortii" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 5.5H4.5v1A3.5 3.5 0 0 0 8 10M16 5.5h3.5v1A3.5 3.5 0 0 1 16 10"/><path d="M12 13v3.5M8.5 20.5h7M9.5 16.5h5v4h-5z"/></symbol>
+ <symbol id="i-addunyaa" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M2.5 12h19M12 2.5c3 3.2 3 15.8 0 19M12 2.5c-3 3.2-3 15.8 0 19"/></symbol>
+ <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5L12 3l9 7.5V21h-6v-6H9v6H3z"/></symbol>
+ <symbol id="u-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h12"/></symbol>
+ <symbol id="u-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20.5 20.5L16 16"/></symbol>
+ <symbol id="u-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+ <symbol id="u-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="M8.2 10.8l7.6-4.4M8.2 13.2l7.6 4.4"/></symbol>
+ <symbol id="u-sound" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></symbol>
+ <symbol id="u-spark" viewBox="0 0 24 24"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9z"/><path d="M18.5 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+ <symbol id="u-text" viewBox="0 0 24 24"><path d="M3 18L8 6l5 12M4.8 14h6.4M14.5 18l3-7 3 7M15.3 16h4.4"/></symbol>
+ <symbol id="u-play" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M10 8.5v7l6-3.5z"/></symbol>
+ <symbol id="u-news" viewBox="0 0 24 24"><path d="M4 5h13v14H6a2 2 0 0 1-2-2z"/><path d="M17 9h3v8a2 2 0 0 1-2 2M7.5 9h6M7.5 12.5h6M7.5 16h4"/></symbol>
+</svg>
+
+<div id="gt"></div>
+<div class="off" id="off"></div>
+
+<header class="hd">
+ <div class="hd-in">
+  <button class="ib" id="mBtn" aria-label="Menu"><svg class="ic"><use href="#u-menu"/></svg></button>
+  <a class="logo notranslate" translate="no" href="#/" aria-label="Barii News"><svg><use href="#logo"/></svg><span class="wm">BARII <b>NEWS</b></span></a>
+  <button class="lb" id="lBtn" aria-label="Language"><svg class="ic"><use href="#i-addunyaa"/></svg><span id="lCode" class="notranslate" translate="no">OM</span></button>
+  <button class="ib" id="sBtn" aria-label="Search"><svg class="ic"><use href="#u-search"/></svg></button>
+ </div>
+ <div class="sbar" id="sBar"><input id="q" type="search" autocomplete="off" enterkeyhint="search"></div>
+</header>
+<nav class="nav" aria-label="Kutaalee"><div class="nav-in" id="nav"></div></nav>
+<div class="tick" id="tick"><div class="tick-in"><span class="tick-l" id="tickL"></span><div class="tick-t"><span id="tickT"></span></div></div></div>
+
+<main id="app"></main>
+
+<footer>
+ <div class="ft">
+  <div class="ft-top">
+   <a class="ft-brand" href="#/"><svg><use href="#logo"/></svg><div><span class="wm notranslate" translate="no" style="font-size:18px">BARII <b>NEWS</b></span><small id="fTag"></small></div></a>
+   <div class="soc" id="soc"></div>
+  </div>
+  <div class="ft-cats" id="fCats"></div>
+  <div class="ft-bot"><span id="copy"></span><div class="ft-links" id="fLinks"></div></div>
+ </div>
+</footer>
+
+<!-- Menu -->
+<div class="scrim" id="scrim"></div>
+<aside class="drw" id="drw" aria-hidden="true">
+ <div class="drw-h"><span class="wm notranslate" translate="no">BARII <b>NEWS</b></span><button class="ib" id="dX" aria-label="Close"><svg class="ic"><use href="#u-x"/></svg></button></div>
+ <div class="drw-q"><input id="dQ" type="search" autocomplete="off" enterkeyhint="search"></div>
+ <nav id="dNav"></nav>
+ <div class="drw-s"><h6 id="dLangT"></h6><div class="chips" id="dLang"></div></div>
+ <div class="drw-s"><button class="tgl" id="themeT"><span id="themeL"></span><i></i></button></div>
+ <div class="drw-s" style="margin-top:auto"><div class="drw-small" id="dSmall"></div></div>
+</aside>
+
+<!-- Modal xiqqaa -->
+<div class="mdl" id="mdl" role="dialog" aria-modal="true"><div class="mdl-b"><button class="ib mdl-x" id="mX" aria-label="Close"><svg class="ic"><use href="#u-x"/></svg></button><div id="mC"></div></div></div>
+
+<!-- Dubbisaa: oduu tokko guutummaa iskiriinii irratti -->
+<div class="rd" id="rd" role="dialog" aria-modal="true">
+ <div class="rd-p" id="rdP"></div>
+ <button class="rd-x" id="rdX" aria-label="Close"><svg class="ic"><use href="#u-x"/></svg></button>
+ <article class="rd-in" id="rdIn"></article>
+ <div class="dock" id="dock">
+  <button id="dAi"><svg class="ic"><use href="#u-spark"/></svg><span></span></button>
+  <button id="dTts"><svg class="ic"><use href="#u-sound"/></svg><span></span></button>
+  <button id="dFs"><svg class="ic"><use href="#u-text"/></svg><span></span></button>
+  <button id="dSh"><svg class="ic"><use href="#u-share"/></svg><span></span></button>
+ </div>
+</div>
+<div class="lbx" id="lbx" role="dialog" aria-modal="true"><button class="ib" id="lbX" aria-label="Close"><svg class="ic"><use href="#u-x"/></svg></button><button class="pv" id="lbP" aria-label="Prev">‹</button><img id="lbI" alt=""><button class="nx" id="lbN" aria-label="Next">›</button><small id="lbC"></small></div>
+<div class="toast" id="toast"></div>
+
+<!-- =====================================================================
+     ODUU FI QINDAA'INA KEE — admin.html'n ofumaan as galcha.
+     Harkaan hin tuqin: admin.html → 🚀 Maxxansi fayyadami.
+     ===================================================================== -->
+<!-- BARII-DATA:START -->
+<script>
+Reflect.set(window, "BARII_SETTINGS", null);
+Reflect.set(window, "BARII_ARTICLES", null);
+</script>
+<!-- BARII-DATA:END -->
+
+<script>
+(function () {
+"use strict";
+
+/* =====================================================
+   ⚙️  QINDAA'INA — Odeeffannoo kee asitti jijjiiri
+   ===================================================== */
+const SITE = {
+  owner: "",                       // Maqaa kee: fkn "Abdii Lammaa"
+  email: "info@bariinews.com",
+  phone: "",                       // fkn "+251 9xx xxx xxx"
+  location: "Finfinnee, Oromiyaa",
+  facebook: "",
+  telegram: "",
+  youtube: "",
+  tiktok: "",
+  x: "",
+  founded: "2026"
+};
+
+/* ================= OGEEFFANNOO JALQABAA (fakkeenya) ================= */
+const SEED = [
+ {id:"bishaan-qulqulluu",cat:"fayyaa",featured:true,date:"2026-11-24",author:"Gulaalaa Barii News",image:"",
+  title:"Bishaan Qulqulluu: Furtuu Fayyaa Maatii",
+  summary:"Dhukkubni hedduun bishaan faalame irraa dhufa. Mana keessatti bishaan qulqulleessuuf maloota salphaa fi gatii xiqqaa qaban beeki.",
+  body:"Bishaan qulqulluun jireenya fayyaa qabuuf bu'uura. Dhukkuboonni akka garaa kaasaa, kolaraa fi tifooyidii yeroo baay'ee bishaan faalame dhuguu irraa ka'u.\n\n## Maloota Salphaa\n\nBishaan danfisuu: Bishaan daqiiqaa tokkoof hanga danfutti danfisuun jermiiwwan baay'ee ajjeesa. Erga qabbanaa'ee booda meeshaa qulqulluu fi cufamaa keessa kaa'i.\n\nKeemikaala qulqulleessaa: Kiloriinii ykn kiniinii qulqulleessaa bishaanii qajeelfama irratti barreeffame hordofuun fayyadami.\n\nAduu fayyadamuu: Qaruuraa pilaastikii ifaa keessa bishaan guutii sa'aatii jahaaf aduu cimaa keessa kaa'uun jermiiwwan hir'isuu danda'a.\n\n> Harka dhiqachuun, keessattuu nyaata dura fi mana fincaanii booda, dhukkuboota hedduu ittisa.\n\nMaatiin hundi bishaan dhugaatii fi kan biroo adda baasee kuusuu qaba. Meeshaan bishaan kuusu yeroo yeroon dhiqamuu fi cufamee turuu qaba."},
+ {id:"bilbila-harkaa-dinagdee",cat:"saayinsii",featured:true,date:"2026-11-23",author:"Gulaalaa Barii News",image:"",
+  title:"Bilbila Harkaa fi Jijjiirama Jireenya Baadiyyaa",
+  summary:"Maallaqa bilbilaan erguu irraa kaasee hanga odeeffannoo gabaa argachuutti, teeknooloojiin bilbilaa jireenya qonnaan bultootaa jijjiiraa jira.",
+  body:"Yeroo ammaa Afrikaa keessatti namoonni miliyoona hedduun bilbila harkaa fayyadamu. Kun teeknooloojii qofa osoo hin taane, meeshaa dinagdee fi barnootaa ta'eera.\n\n## Maallaqa Bilbilaan\n\nTajaajilli maallaqa bilbilaan erguu fi fudhachuu namoota baankii irraa fagoo jiraataniif carraa haaraa banee jira. Qonnaan bultoonni gatii oomisha isaanii battaluma argachuu danda'u.\n\n## Odeeffannoo Gabaa fi Qilleensaa\n\nErgaa gabaabaa fi appiiwwan salphaan odeeffannoo gatii gabaa fi tilmaama qilleensaa kennu. Kun murtoo qonnaa fooyyessa.\n\n## Qormaata\n\nHaa ta'u malee, gatiin daataa, humna ibsaa dhabuu fi beekumsi dijitaalaa gahaa dhabuun ammallee rakkoo dha. Mootummaa, dhaabbilee fi hawaasni walii galtee uumuu qabu."},
+ {id:"busaa-ittisuu",cat:"fayyaa",date:"2026-11-22",author:"Gulaalaa Barii News",image:"",
+  title:"Busaa (Malaariyaa) Ittisuuf Tarkaanfiiwwan Salphaa",
+  summary:"Busaan Afrikaa keessatti dhukkuboota lubbuu namaa galaafatan keessaa tokko. Maatii kee akkamitti eegda?",
+  body:"Busaan bookee dhaan daddarba. Keessattuu daa'imman fi dubartoonni ulfaa'oon miidhamuuf saaxilamoo dha.\n\n## Akkamitti Ittisna?\n\nAgobara qoricha qabu halkan hunda keessa rafuu. Bishaan dhaabbataa naannoo manaa jiru balleessuu, sababni isaas bookeen achitti hormaata. Uffata harka dheeraa uffachuu, keessattuu galgala.\n\n## Mallattoolee\n\nHo'a qaamaa, dhiphina, mataa dhukkubbii fi qorraa yoo argite, battaluma buufata fayyaa dhaqi. Busaan dafee yoo yaalame ni fayya."},
+ {id:"odeeffannoo-sobaa",cat:"saayinsii",date:"2026-11-21",author:"Gulaalaa Barii News",image:"",
+  title:"Odeeffannoo Sobaa Interneetii Irratti Akkamitti Adda Baafna?",
+  summary:"Miidiyaa hawaasaa irratti oduun sobaa saffisaan babal'ata. Qajeelfamoota salphaa shan dhugaa fi soba addaan baasuuf si gargaaran.",
+  body:"Oduun sobaa yeroo baay'ee miira namaa kakaasuuf qophaa'a. Kanaaf qoodaa gochuu kee dura yeroo muraasa fudhadhu.\n\n## Qajeelfamoota Shan\n\nMadda ilaali: Eenyutu barreesse? Dhaabbata beekamaa dha? Guyyaa ilaali: Oduun moofaan akka haaraatti deebi'ee dhiyaata.\n\nMadda biraa irratti mirkaneessi: Oduun guddaan yoo dhugaa ta'e, miidiyaa hedduu irratti argama. Suuraa qori: Suuraan bakka biraa fi yeroo biraa irraa fudhatamee fayyadamuu danda'a.\n\nMiira kee to'adhu: Oduun si aarsu ykn si sodaachisu yeroo baay'ee dogoggora qabaachuu danda'a.\n\n> Qoodaa gochuu dura mirkaneessi — kun itti gaafatamummaa lammummaa ammayyaati."},
+ {id:"sirna-gadaa",cat:"aadaa",featured:true,date:"2026-11-20",author:"Gulaalaa Barii News",image:"",
+  title:"Sirna Gadaa: Dhaala Dimokraasii Afrikaa",
+  summary:"Sirni Gadaa sirna bulchiinsa hawaasaa Oromoo kan bara dheeraa ture yoo ta'u, bara 2016 UNESCO'n dhaala aadaa addunyaa ta'ee galmaa'eera.",
+  body:"Sirni Gadaa sirna siyaasaa, dinagdee fi hawaasummaa uummata Oromoo kan dhaloota dhalootaan darbaa dhufe dha.\n\n## Bu'uura Sirnichaa\n\nSirnichi kutaa umurii irratti hundaa'a. Aangoon waggaa saddeet saddeetiin harka wal jijjiira. Kun aangoon nama tokko harka akka hin turre ittisa.\n\n## Duudhaalee Gurguddoo\n\nWalqixxummaa, mariin murteessuu, nagaa fi kabaja uumamaaf qabaachuun duudhaalee sirnichaa keessaa muraasa.\n\n## Beekamtii Addunyaa\n\nBara 2016 UNESCO'n Sirna Gadaa dhaala aadaa addunyaa hin tuqamne keessatti galmeesseera. Kun boonsaa Oromoo qofa osoo hin taane, boonsaa Afrikaa guutuu ti."},
+ {id:"hirmaannaa-lammiilee",cat:"siyaasa",date:"2026-11-19",author:"Gulaalaa Barii News",image:"",
+  title:"Hirmaannaan Lammiilee Bulchiinsa Gaarii Keessatti Maaliif Barbaachisa?",
+  summary:"Bulchiinsi gaariin mootummaa qofaan hin ijaaramu. Lammiileen beekumsaan hirmaachuun murtoo isaan tuqu irratti sagalee qabaachuu qabu.",
+  body:"Hirmaannaan lammiilee yeroo filannoo sagalee kennuu qofa miti. Marii hawaasaa irratti hirmaachuu, gaaffii mirgaa nagaan dhiyeessuu fi tajaajila ummataa hordofuu of keessaa qaba.\n\n## Mirgaa fi Dirqama\n\nLammiin kamiyyuu heera biyyaa fi seera beekuun mirga isaa kabachiisuu fi dirqama isaa bahuu danda'a.\n\n## Odeeffannoo Dhugaa\n\nMurtoo gaarii kennuuf odeeffannoo madaalawaa fi dhugaa argachuun murteessaa dha. Barii News yaada garee hundaa haqaan dhiyeessuuf kutannoo qaba.\n\n> Sagaleen kee ni barbaachisa — beekumsaan, nagaan fi kabajaan itti fayyadami."},
+ {id:"irreechaa",cat:"aadaa",date:"2026-11-18",author:"Gulaalaa Barii News",image:"",
+  title:"Irreechaa: Ayyaana Galataa fi Nagaa",
+  summary:"Irreechi ayyaana Waaqaaf galata itti galchan, nagaa fi araara itti labsan yoo ta'u, aadaa Oromoo keessatti iddoo guddaa qaba.",
+  body:"Irreechi ayyaana waggaa waggaan kabajamu dha. Irreecha Malkaa fi Irreecha Tulluu jedhamuun bakka lamatti qoodama.\n\n## Hiika Ayyaanichaa\n\nIrreecha Birraa irratti, gannaa dukkanaa'aa fi bishaan baay'ee irraa nagaan ce'uu isaaniif, uummanni Waaqaaf galata galcha. Marga jiidhaa fi daraaraa qabatanii gara malkaatti deemu.\n\n## Nagaa fi Tokkummaa\n\nAyyaanichi bakka itti namoonni wal araarsan, wal eebbisan fi tokkummaa isaanii itti ibsatan dha. Uffata aadaa, sirba fi weedduun ayyaanicha miidhagsu."},
+ {id:"qusannoo-xixiqqaa",cat:"dinagdee",date:"2026-11-17",author:"Gulaalaa Barii News",image:"",
+  title:"Qusannoo Xixiqqaa: Karaa Dinagdee Maatii Jabeessu",
+  summary:"Galiin xiqqaa ta'us, qusannoo yeroo yeroon gootuun gara fuulduraatti jijjiirama guddaa fiduu danda'a.",
+  body:"Hawaasni keenya bara dheeraaf iqqubii fi waldaalee qusannoo fayyadamaa ture. Sirni kun amanamummaa fi walgargaarsa irratti hundaa'a.\n\n## Qajeelfamoota Qusannoo\n\nGalii kee keessaa harka kudhan jalqaba qusadhu, ergasii baasi. Baasii kee guyyaa guyyaan barreessi; maallaqni kee eessa akka deemu beeki. Maallaqa yeroo rakkoof adda baasi.\n\n## Waldaalee Qusannoo fi Liqii\n\nWaldaaleen qusannoo fi liqii hawaasaa liqii gatii xiqqaa qabu kennuun daldala xixiqqaa jalqabuuf gargaaru."},
+ {id:"fiigicha-afrikaa-bahaa",cat:"ispoortii",date:"2026-11-16",author:"Gulaalaa Barii News",image:"",
+  title:"Fiigicha Fageenya Dheeraa: Boonaa Afrikaa Bahaa",
+  summary:"Gaarreen Afrikaa Bahaa fiigdota addunyaa beekamoo hedduu horachiiseera. Iccitiin milkaa'ina isaanii maali?",
+  body:"Fiigdonni Itoophiyaa fi Keeniyaa bara dheeraaf dorgommiiwwan addunyaa irratti injifannoo guddaa galmeessisaa turan.\n\n## Iccitii Milkaa'inaa\n\nOlka'iinsa lafaa: Bakka ol ka'aa irratti leenji'uun onnee fi sombaa cimsa. Jireenya hojii: Ijoolleen baay'een gara mana barumsaa fiiguun guddatu. Kutannoo fi aadaa leenjii: Leenjii garee fi gorsa leenjistootaa muuxannoo qabanii.\n\n## Dhaloota Haaraa\n\nGolmaa leenjii dargaggootaa babal'isuun dhaloonni haaraan seenaa kana itti fufsiisuu danda'a."},
+ {id:"dubbisuu-daa-imman",cat:"barnoota",date:"2026-11-15",author:"Gulaalaa Barii News",image:"",
+  title:"Daa'imman Afaan Haadhaatiin Dubbisuu Akka Jaallatan Gochuu",
+  summary:"Barnoota afaan haadhaatiin jalqabuun hubannoo daa'immanii cimsa. Maatiin mana keessatti maal gochuu danda'a?",
+  body:"Qorannoon hedduun akka agarsiisutti, daa'imman afaan haadhaatiin barachuu jalqaban dandeettii dubbisuu fi yaaduu cimaa horatu.\n\n## Mana Keessatti\n\nGuyyaa guyyaan daqiiqaa kudhaniif daa'ima keetiif dubbisi. Oduu durii fi mammaaksa Afaan Oromoo itti himi. Kitaabota salphaa fi suuraa qaban barbaadi.\n\n> Daa'imni dubbisuu jaallatu, barachuu jaallata."}
+];
+
+/* ================= AFAANOTA ================= */
+const CATK = ["fayyaa", "saayinsii", "hawaasa", "siyaasa", "dinagdee", "aadaa", "barnoota", "ispoortii", "addunyaa"];
+
+const I18N = {
+  om: {
+    tagline: "Odeeffannoo Dhugaa, Barii Haaraa", home: "Jalqaba", top: "Oduu Filatamoo", latest: "Oduu Haaraa", breaking: "Haaraa",
+    all: "Hunda ilaali", more: "Dabalataan fe'i", searchPh: "Oduu barbaadi…", results: "bu'aa argame",
+    noRes: "Waanti barbaadde hin argamne. Jecha biraa yaali.", emptyT: "Oduun haaraan dhiyootti",
+    emptyD: "Odeeffannoo dhugaa isiniif qopheessaa jirra. Nu waliin turaa!", about: "Waa'ee Keenya", contact: "Nu Qunnamaa",
+    policy: "Naamusa Gabaasaa", lang: "Afaan", chooseLang: "Afaan Filadhu",
+    langNote: "Afaan Oromoo, English fi አማርኛ guutummaatti deeggaramu. Afaanonni biroo hundi ofumaan (AI) hiikamu.",
+    dark: "Halluu dukkanaa'aa", min: "Daq. {n} dubbisuu", by: "Barreessaa", share: "Qoodi", copy: "Liinkii",
+    copied: "Liinkiin garagalfameera ✓", listen: "Dhaggeeffadhu", stop: "Dhaabi", ai: "Cuunfaa AI",
+    aiT: "Ijoo Oduu — Cuunfaa AI", aiNote: "Qabxiiwwan ijoo oduu kanaa ofumaan (AI) baafaman.", size: "Qubee",
+    offline: "Interneetiin hin jiru — oduu kuufame agarsiisaa jirra", rights: "Mirgi hundi seeraan eegamaa dha.",
+    noTts: "Meeshaan kee sagalee hin deeggaru", gtFail: "Hiikkaan fe'amuu hin dandeenye — interneetii kee mirkaneessi",
+    translating: "Hiikaa jira…", nf: "Fuulli barbaadde hin argamne.", goHome: "Gara jalqabaa", stories: "oduu",
+    other: "Afaanota biroo", email: "Imeelii", phone: "Bilbila", loc: "Teessoo",
+    cNote: "Oduu, suuraa ykn yaada qabdu nuuf ergi. Yoo barbaadde maqaan kee icciitiin ni eegama.", aboutMore: "Bal'inaan dubbisi", videos: "Viidiyoo", photos: "Suuraalee", watch: "Viidiyoo ilaali", mediaD: "Oduu viidiyoo fi suuraalee qaban"
+  },
+  en: {
+    tagline: "True Information, A New Dawn", home: "Home", top: "Top Stories", latest: "Latest News", breaking: "Latest",
+    all: "See all", more: "Load more", searchPh: "Search news…", results: "results",
+    noRes: "Nothing found. Try another word.", emptyT: "Fresh news coming soon",
+    emptyD: "We are preparing trustworthy stories for you. Stay with us!", about: "About Us", contact: "Contact Us",
+    policy: "Editorial Policy", lang: "Language", chooseLang: "Choose Language",
+    langNote: "Afaan Oromoo, English and አማርኛ are fully supported. All other languages are translated automatically (AI).",
+    dark: "Dark mode", min: "{n} min read", by: "By", share: "Share", copy: "Link",
+    copied: "Link copied ✓", listen: "Listen", stop: "Stop", ai: "AI Summary",
+    aiT: "Key Points — AI Summary", aiNote: "Key points of this story, extracted automatically (AI).", size: "Text",
+    offline: "You are offline — showing saved news", rights: "All rights reserved.",
+    noTts: "Your device does not support speech", gtFail: "Translation could not load — check your internet",
+    translating: "Translating…", nf: "The page you are looking for was not found.", goHome: "Go home", stories: "stories",
+    other: "Other languages", email: "Email", phone: "Phone", loc: "Location",
+    cNote: "Send us news tips, photos or feedback. Your identity can stay confidential if you wish.", aboutMore: "Read in full", videos: "Videos", photos: "Photos", watch: "Watch video", mediaD: "Stories with video and photos"
+  },
+  am: {
+    tagline: "እውነተኛ መረጃ፣ አዲስ ንጋት", home: "ዋና ገጽ", top: "ዋና ዋና ዜናዎች", latest: "የቅርብ ጊዜ ዜናዎች", breaking: "ሰበር",
+    all: "ሁሉንም እይ", more: "ተጨማሪ ጫን", searchPh: "ዜና ፈልግ…", results: "ውጤቶች",
+    noRes: "ምንም አልተገኘም። ሌላ ቃል ይሞክሩ።", emptyT: "አዳዲስ ዜናዎች በቅርቡ",
+    emptyD: "ታማኝ ዜናዎችን እያዘጋጀንልዎ ነው። ከእኛ ጋር ይቆዩ!", about: "ስለ እኛ", contact: "ያግኙን",
+    policy: "የአርትዖት መመሪያ", lang: "ቋንቋ", chooseLang: "ቋንቋ ይምረጡ",
+    langNote: "Afaan Oromoo፣ English እና አማርኛ ሙሉ በሙሉ ይደገፋሉ። ሌሎች ቋንቋዎች በሙሉ በራስ-ሰር (AI) ይተረጎማሉ።",
+    dark: "ጨለማ ገጽታ", min: "{n} ደቂቃ ንባብ", by: "ጸሐፊ", share: "አጋራ", copy: "ሊንክ",
+    copied: "ሊንኩ ተቀድቷል ✓", listen: "አዳምጥ", stop: "አቁም", ai: "AI ማጠቃለያ",
+    aiT: "ዋና ነጥቦች — AI ማጠቃለያ", aiNote: "የዚህ ዜና ዋና ነጥቦች በራስ-ሰር (AI) የወጡ።", size: "ፊደል",
+    offline: "ኢንተርኔት የለም — የተቀመጡ ዜናዎችን እያሳየን ነው", rights: "መብቱ በህግ የተጠበቀ ነው።",
+    noTts: "መሳሪያዎ ድምጽን አይደግፍም", gtFail: "ትርጉሙ ሊጫን አልቻለም — ኢንተርኔትዎን ያረጋግጡ",
+    translating: "በመተርጎም ላይ…", nf: "የፈለጉት ገጽ አልተገኘም።", goHome: "ወደ ዋና ገጽ", stories: "ዜናዎች",
+    other: "ሌሎች ቋንቋዎች", email: "ኢሜይል", phone: "ስልክ", loc: "አድራሻ",
+    cNote: "ዜና፣ ፎቶ ወይም አስተያየት ይላኩልን። ከፈለጉ ማንነትዎ በሚስጥር ይጠበቃል።", aboutMore: "በዝርዝር ያንብቡ", videos: "ቪዲዮዎች", photos: "ፎቶዎች", watch: "ቪዲዮውን ይመልከቱ", mediaD: "ቪዲዮና ፎቶ ያላቸው ዜናዎች"
+  }
+};
+
+const CATS_I18N = {
+  om: { fayyaa: "Fayyaa", saayinsii: "Saayinsii fi Teeknooloojii", hawaasa: "Hawaasa", siyaasa: "Siyaasa", dinagdee: "Dinagdee", aadaa: "Aadaa fi Seenaa", barnoota: "Barnoota", ispoortii: "Ispoortii", addunyaa: "Addunyaa" },
+  en: { fayyaa: "Health", saayinsii: "Science & Tech", hawaasa: "Society", siyaasa: "Politics", dinagdee: "Economy", aadaa: "Culture & History", barnoota: "Education", ispoortii: "Sports", addunyaa: "World" },
+  am: { fayyaa: "ጤና", saayinsii: "ሳይንስና ቴክኖሎጂ", hawaasa: "ማህበረሰብ", siyaasa: "ፖለቲካ", dinagdee: "ኢኮኖሚ", aadaa: "ባህልና ታሪክ", barnoota: "ትምህርት", ispoortii: "ስፖርት", addunyaa: "ዓለም" }
+};
+const OM_MONTHS = ["Amajjii", "Guraandhala", "Bitootessa", "Ebla", "Caamsaa", "Waxabajjii", "Adoolessa", "Hagayya", "Fulbaana", "Onkoloolessa", "Sadaasa", "Muddee"];
+const OM_DAYS = ["Dilbata", "Wiixata", "Kibxata", "Roobii", "Kamisa", "Jimaata", "Sanbata"];
+
+/* ================= WAA'EE KEENYA (bal'inaan) ================= */
+const ABOUT = {
+  om: {
+    intro: [
+      "<b>Barii News</b> marsariitii oduu fi odeeffannoo dijitaalaa walaba ta'e, kan dhuunfaan hundeeffamee fi bulchamu dha. Kaayyoon keenya inni guddaan ummata keenyaaf odeeffannoo dhugaa, madaalawaa, qulqullina qabuu fi yeroo isaa eeggate karaa salphaa, saffisaa fi kaffaltii malee ta'een dhiyeessuu dha.",
+      "Nuyi oduu gabaasuu qofa osoo hin taane, hubannoo uumuu, hawaasa barsiisuu fi sagalee ummataa dhageessisuu barbaanna. Barii News bakka itti namni kamiyyuu — qonnaan bulaa baadiyyaa irraa hanga barataa yuunivarsiitii fi hayyuu addunyaatti — odeeffannoo amanamaa afaan isaatiin argatu dha."
+    ],
+    sections: [
+      { h: "Seenaa fi Hundeeffama Keenya", b: "<p>Barii News bara 2026 hojii dhuunfaatiin hundeeffame. Ka'umsi isaa rakkoo salphaa garuu guddaa tokko ture: ummanni keenya odeeffannoo amanamaa, madaalawaa fi afaan isaatiin qophaa'e argachuuf rakkachuu isaa.</p><p>Miidiyaan hawaasaa oduu saffisaan babal'isa, garuu yeroo baay'ee dhugaa fi soba addaan baasuun ulfaataa dha. Barii News duudhaa gaazexessummaa ogummaa irratti hundaa'uun, oduu mirkanaa'e qofa dhiyeessuuf dhalate. Xiqqoo irraa jalqabnee, ummata keenya waliin guddachaa jirra.</p>" },
+      { h: "Hiika Maqaa “Barii”", b: "<p>Afaan Oromoo keessatti <b>“barii”</b> yeroo ganamaa, dukkanni halkanii darbee ifni guyyaa itti mul'atu jechuu dha. Barii mallattoo abdii, jalqaba haaraa fi carraa haaraa ti.</p><p>Akkuma bariin dukkana ariu, nuyis dukkana odeeffannoo dhabuu, wallaalummaa fi oduu sobaa ifa beekumsaa fi dhugaatiin bakka buusuu barbaanna. Odeeffannoon dhugaan ummata dammaqsa; ummanni dammaqe ammoo boru isaa ifa godhata.</p>" },
+      { h: "Ergama Keenya", b: "<p>Oduu fi odeeffannoo dhugaa, qulqullina qabuu fi faayidaa qabu afaanota hedduun — keessattuu Afaan Oromootiin — dhiyeessuun, hawaasa beekumsaan dammaqe, mirga isaa beekuu fi murtoo gaarii kennu ijaaruu.</p>" },
+      { h: "Mul'ata Keenya", b: "<p>Afrikaa keessatti madda oduu dijitaalaa isa amanamaa, baay'ee dubbifamu fi sagalee ummata Afrikaa addunyaatti dhageessisu ta'uu.</p>" },
+      { h: "Kaayyoowwan Keenya", b: "<ul><li>Odeeffannoo dhugaa fi mirkanaa'e ummataaf dhiyeessuu.</li><li>Oduu sobaa fi odeeffannoo dogoggoraa ittisuu.</li><li>Afaan Oromoo fi afaanota Afrikaa biroo dijitaalaan guddisuu.</li><li>Fayyaa, barnoota, saayinsii fi teeknooloojii irratti hubannoo uumuu.</li><li>Sagalee hawaasaa, keessattuu kan baadiyyaa, dubartootaa fi dargaggootaa dhageessisuu.</li><li>Aadaa, seenaa fi duudhaa Afrikaa boonsaan dhaloota itti aanuuf dabarsuu.</li></ul>" },
+      { h: "Duudhaalee Keenya", b: "<ul><li><b>Dhugaa:</b> Wanta mirkaneeffame qofa gabaafna.</li><li><b>Haqaa fi Madaalawummaa:</b> Yaada garee hundaa haqaan dhiyeessina; gara tokkootti hin jallannu.</li><li><b>Walabummaa:</b> Humna siyaasaa, dinagdee ykn nama kamiinuu hin ajajamnu.</li><li><b>Kabaja Namummaa:</b> Mirga, ulfina fi icciitii dhuunfaa nama hundaa ni kabajna.</li><li><b>Itti Gaafatamummaa:</b> Dogoggora keenyaaf itti gaafatamna, ifattis ni sirreessina.</li><li><b>Sagalee Ummataa:</b> Warra hin dhagahamneef waltajjii kennina.</li><li><b>Boonsa Afrikaa:</b> Beekumsa, aadaa fi seenaa Afrikaa boonsaan dhiyeessina.</li></ul>" },
+      { h: "Maal Gabaafna?", b: "<ul><li><b>Fayyaa:</b> Gorsa fayyaa, ittisa dhukkubaa, nyaata fi qulqullina.</li><li><b>Saayinsii fi Teeknooloojii:</b> Haaromsa, interneetii, AI fi teeknooloojii jireenya jijjiiru.</li><li><b>Hawaasa:</b> Jireenya, rakkoo fi milkaa'ina hawaasaa.</li><li><b>Siyaasa:</b> Odeeffannoo bulchiinsaa, seeraa fi mirga lammummaa — madaalawaan.</li><li><b>Dinagdee:</b> Gabaa, qonna, daldala fi qusannoo.</li><li><b>Aadaa fi Seenaa:</b> Sirna Gadaa, ayyaanota, afaan fi seenaa.</li><li><b>Barnoota:</b> Carraa barnootaa, qajeelfama barattootaa fi maatii.</li><li><b>Ispoortii:</b> Fiigicha, kubbaa miilaa fi milkaa'ina ispoortessitootaa.</li><li><b>Addunyaa:</b> Oduu addunyaa kan jireenya keenya tuqan.</li></ul>" },
+      { h: "Maaliif Barii News?", b: "<ul><li><b>Saffisa:</b> Network laafaa (2G/3G) irrattis dafee bana.</li><li><b>Meeshaa hunda irratti:</b> Bilbila xiqqaa, bilbila guddaa, taabileetii fi kompiitara.</li><li><b>Afaanota hedduu:</b> Afaan Oromoo, English, አማርኛ fi afaanota addunyaa 30 ol.</li><li><b>AI:</b> Cuunfaa ofumaan, oduu sagaleedhaan dhaggeeffachuu fi barbaacha smart.</li><li><b>Dubbisuu qulqulluu:</b> Oduun tokko yoo banamu, barreeffama qofatu mul'ata — waan si jeequ hin qabu.</li><li><b>Bilisa:</b> Odeeffannoon keenya nama hundaaf kaffaltii malee.</li></ul>" },
+      { h: "Walabummaa fi Iftoomina", b: "<p>Barii News garee siyaasaa, dhaabbata mootummaa ykn daldalaa kamiinuu hin to'atamu. Murtoon gulaallii guutummaatti kan gulaalaa keenyaa ti. Yoo gara fuulduraatti beeksisni ykn deeggarsi jiraate, ifatti “Beeksisa” jedhamee ni mallattoofama; qabiyyee oduu keenya irrattis dhiibbaa hin qabaatu.</p>" },
+      { h: "Hiika Asxaa (Logo) Keenyaa", b: "<p>Asxaan keenya ummata Afrikaa bakka bu'a:</p><ul><li>⚫ <b>Gurraacha</b> — ummata Afrikaa, jabina fi of danda'uu.</li><li>🔴 <b>Diimaa</b> — kutannoo, jaalala fi wareegama abbootii keenyaa.</li><li>⚪ <b>Adii</b> — nagaa, dhugaa fi qulqullina.</li><li>☀️ <b>Aduu ba'aa</b> — barii, abdii fi jalqaba haaraa.</li><li>👥 <b>Namoota sadii harka wal qabatan</b> — tokkummaa maatii, hawaasaa fi dhalootaa.</li><li>〰️ <b>Faaya aadaa jalaa</b> — aadaa fi seenaa Afrikaa.</li></ul>" },
+      { h: "Hirmaannaa Keessan", b: "<p>Barii News kan ummataa ti. Oduu, suuraa, yaada ykn barreeffama ilaalchaa nuuf erguu dandeessu. Wanti nuuf ergitan hundi dura ni mirkanaa'a, yoo barbaaddan maqaan keessan icciitiin ni eegama. Akkasumas oduu keenya hiriyoota keessaniif qooduun odeeffannoo dhugaa babal'isuu keessatti gahee guddaa qabdu.</p>" },
+      { h: "Sirreeffama fi Komii", b: "<p>Nuyis dogoggoruu dandeenya. Oduu keenya keessatti dogoggora yoo argitan, karaa “Nu Qunnamaa” nuuf himaa. Dogoggorri mirkanaa'e battaluma ni sirraa'a, sirreeffamni sunis ifatti ni ibsama.</p>" }
+    ],
+    policy: [
+      "Oduu hunda yoo xiqqaate maddaalee amanamoo lamaan ni mirkaneessina.",
+      "Oduu (dhugaa) fi yaada (ilaalcha) addaan baasnee ifatti ibsina.",
+      "Yaada garee walmorman hundaa haqaan dhiyeessina.",
+      "Jibbaa, garaagarummaa sanyii, amantaa ykn saalaa kan kakaasu hin maxxansinu.",
+      "Icciitii dhuunfaa namootaa, keessattuu daa'immanii fi miidhamtootaa, ni eegna.",
+      "Suuraa fi barreeffama namoota biroo hayyama malee hin fayyadamnu; madda ni ibsina.",
+      "Icciitii madda odeeffannoo keenyaa ni eegna.",
+      "Dogoggora yoo raawwanne ifatti fi battaluma sirreessina."
+    ],
+    close: "Barii News — Odeeffannoo dhugaatiin, barii haaraa! 🌅"
+  },
+  en: {
+    intro: [
+      "<b>Barii News</b> is an independent digital news and information outlet, privately founded and run. Our core purpose is to bring the public true, balanced, high-quality and timely information — simply, quickly and free of charge.",
+      "We don't just report the news; we aim to build understanding, educate communities and amplify the voice of the people. Barii News is a place where anyone — from a farmer in the countryside to a university student or a global scholar — can find trustworthy information in their own language."
+    ],
+    sections: [
+      { h: "Our Story", b: "<p>Barii News was founded in 2026 as a personal initiative. It was born from a simple but serious problem: our people struggle to find reliable, balanced information prepared in their own language.</p><p>Social media spreads news fast, but it is often hard to tell truth from falsehood. Barii News was created to publish only verified news, grounded in professional journalistic values. We started small, and we are growing together with our readers.</p>" },
+      { h: "The Meaning of “Barii”", b: "<p>In Afaan Oromoo, <b>“barii”</b> means <i>dawn</i> — the moment the darkness of night passes and the light of day appears. Dawn is a symbol of hope, new beginnings and new opportunities.</p><p>Just as dawn chases away the dark, we want to replace the darkness of missing information, ignorance and fake news with the light of knowledge and truth. Truth awakens people; an awakened people lights up its own future.</p>" },
+      { h: "Our Mission", b: "<p>To build an informed society that knows its rights and makes good decisions, by delivering true, high-quality and useful information in many languages — especially Afaan Oromoo.</p>" },
+      { h: "Our Vision", b: "<p>To be Africa's most trusted and widely read digital news source, carrying the voice of African people to the world.</p>" },
+      { h: "Our Goals", b: "<ul><li>Deliver true and verified information to the public.</li><li>Counter fake news and misinformation.</li><li>Grow Afaan Oromoo and other African languages in the digital space.</li><li>Raise awareness on health, education, science and technology.</li><li>Amplify community voices — especially rural people, women and youth.</li><li>Pass Africa's culture, history and values proudly to the next generation.</li></ul>" },
+      { h: "Our Values", b: "<ul><li><b>Truth:</b> We report only what is verified.</li><li><b>Fairness & Balance:</b> We present all sides fairly; we take no side.</li><li><b>Independence:</b> We take orders from no political, economic or personal power.</li><li><b>Human Dignity:</b> We respect everyone's rights, dignity and privacy.</li><li><b>Accountability:</b> We own our mistakes and correct them openly.</li><li><b>Voice of the People:</b> We give a platform to those rarely heard.</li><li><b>African Pride:</b> We present African knowledge, culture and history with pride.</li></ul>" },
+      { h: "What We Cover", b: "<ul><li><b>Health:</b> Health advice, disease prevention, nutrition and hygiene.</li><li><b>Science & Tech:</b> Innovation, the internet, AI and life-changing technology.</li><li><b>Society:</b> Community life, challenges and success stories.</li><li><b>Politics:</b> Governance, law and civic rights — in a balanced way.</li><li><b>Economy:</b> Markets, farming, business and saving.</li><li><b>Culture & History:</b> The Gadaa system, festivals, language and history.</li><li><b>Education:</b> Opportunities and guidance for students and families.</li><li><b>Sports:</b> Athletics, football and our athletes' achievements.</li><li><b>World:</b> Global news that affects our lives.</li></ul>" },
+      { h: "Why Barii News?", b: "<ul><li><b>Fast:</b> Opens quickly even on slow 2G/3G networks.</li><li><b>Every device:</b> Small and large phones, tablets and computers.</li><li><b>Many languages:</b> Afaan Oromoo, English, አማርኛ and 30+ world languages.</li><li><b>AI:</b> Automatic summaries, listen-to-article and smart search.</li><li><b>Clean reading:</b> When you open a story, you see only the story — nothing else.</li><li><b>Free:</b> Our information is free for everyone.</li></ul>" },
+      { h: "Independence & Transparency", b: "<p>Barii News is not controlled by any political party, government body or company. All editorial decisions belong to our editor. If advertising or sponsorship ever appears, it will be clearly labelled “Advertisement” and will never influence our news content.</p>" },
+      { h: "The Meaning of Our Logo", b: "<p>Our logo represents the people of Africa:</p><ul><li>⚫ <b>Black</b> — the African people, strength and self-reliance.</li><li>🔴 <b>Red</b> — commitment, love and the sacrifice of our ancestors.</li><li>⚪ <b>White</b> — peace, truth and purity.</li><li>☀️ <b>The rising sun</b> — dawn, hope and a new beginning.</li><li>👥 <b>Three people holding hands</b> — unity of family, community and generations.</li><li>〰️ <b>The traditional pattern</b> — African culture and heritage.</li></ul>" },
+      { h: "Get Involved", b: "<p>Barii News belongs to the people. You can send us news tips, photos, ideas or opinion pieces. Everything you send is verified first, and your identity can stay confidential if you wish. Sharing our stories with friends also helps spread the truth.</p>" },
+      { h: "Corrections & Complaints", b: "<p>We can make mistakes too. If you find an error in our reporting, tell us via “Contact Us”. Confirmed errors are corrected promptly, and the correction is stated openly.</p>" }
+    ],
+    policy: [
+      "We verify every story with at least two reliable sources.",
+      "We clearly separate news (facts) from opinion.",
+      "We fairly present all sides of a disagreement.",
+      "We never publish content that incites hatred based on ethnicity, religion or gender.",
+      "We protect people's privacy — especially children and victims.",
+      "We never use others' photos or writing without permission; we credit our sources.",
+      "We protect the confidentiality of our sources.",
+      "When we make mistakes, we correct them openly and promptly."
+    ],
+    close: "Barii News — With true information, a new dawn! 🌅"
+  },
+  am: {
+    intro: [
+      "<b>ባሪ ኒውስ (Barii News)</b> በግል የተመሰረተና የሚተዳደር ገለልተኛ የዲጂታል ዜናና መረጃ መድረክ ነው። ዋና ዓላማችን እውነተኛ፣ ሚዛናዊ፣ ጥራት ያለውና ወቅታዊ መረጃን በቀላል፣ በፈጣንና በነፃ ለህዝብ ማድረስ ነው።",
+      "ዜና መዘገብ ብቻ ሳይሆን ግንዛቤ መፍጠር፣ ማህበረሰብን ማስተማርና የህዝብን ድምጽ ማሰማት እንፈልጋለን። ባሪ ኒውስ ማንኛውም ሰው — ከገጠር አርሶ አደር እስከ ዩኒቨርሲቲ ተማሪና የዓለም ምሁር — ታማኝ መረጃን በራሱ ቋንቋ የሚያገኝበት ቦታ ነው።"
+    ],
+    sections: [
+      { h: "ታሪካችን", b: "<p>ባሪ ኒውስ በ2026 በግል ተነሳሽነት ተመሰረተ። የተነሳው ከቀላል ግን ትልቅ ችግር ነው፤ ህዝባችን በራሱ ቋንቋ የተዘጋጀ ታማኝና ሚዛናዊ መረጃ ለማግኘት መቸገሩ።</p><p>ማህበራዊ ሚዲያ ዜናን በፍጥነት ያሰራጫል፤ ነገር ግን እውነትን ከሐሰት መለየት ብዙ ጊዜ ከባድ ነው። ባሪ ኒውስ በሙያዊ የጋዜጠኝነት እሴቶች ላይ ተመስርቶ የተረጋገጡ ዜናዎችን ብቻ ለማቅረብ ተፈጠረ። ከትንሽ ጀምረን ከአንባቢዎቻችን ጋር አብረን እያደግን ነው።</p>" },
+      { h: "የ«ባሪ» ትርጉም", b: "<p>በኦሮምኛ <b>«ባሪ»</b> ማለት <i>ንጋት</i> ነው — የሌሊቱ ጨለማ አልፎ የቀኑ ብርሃን የሚታይበት ጊዜ። ንጋት የተስፋ፣ የአዲስ ጅማሬና የአዲስ ዕድል ምልክት ነው።</p><p>ንጋት ጨለማን እንደሚያባርር ሁሉ፣ እኛም የመረጃ እጦትን፣ አለማወቅንና የሐሰት ዜናን ጨለማ በእውቀትና በእውነት ብርሃን ለመተካት እንፈልጋለን።</p>" },
+      { h: "ተልዕኮአችን", b: "<p>እውነተኛ፣ ጥራት ያለውና ጠቃሚ መረጃን በብዙ ቋንቋዎች — በተለይም በአፋን ኦሮሞ — በማቅረብ መብቱን የሚያውቅና ጥሩ ውሳኔ የሚሰጥ በእውቀት የነቃ ማህበረሰብ መገንባት።</p>" },
+      { h: "ራዕያችን", b: "<p>በአፍሪካ እጅግ ታማኝና በብዛት የሚነበብ የዲጂታል ዜና ምንጭ በመሆን የአፍሪካ ህዝቦችን ድምጽ ለዓለም ማሰማት።</p>" },
+      { h: "ግቦቻችን", b: "<ul><li>እውነተኛና የተረጋገጠ መረጃ ለህዝብ ማቅረብ።</li><li>የሐሰት ዜናንና የተሳሳተ መረጃን መከላከል።</li><li>አፋን ኦሮሞንና ሌሎች የአፍሪካ ቋንቋዎችን በዲጂታል ዓለም ማሳደግ።</li><li>በጤና፣ በትምህርት፣ በሳይንስና በቴክኖሎጂ ግንዛቤ መፍጠር።</li><li>የማህበረሰብን በተለይም የገጠር ነዋሪዎችን፣ የሴቶችንና የወጣቶችን ድምጽ ማሰማት።</li><li>የአፍሪካን ባህል፣ ታሪክና እሴት በኩራት ለቀጣዩ ትውልድ ማስተላለፍ።</li></ul>" },
+      { h: "እሴቶቻችን", b: "<ul><li><b>እውነት፡</b> የተረጋገጠውን ብቻ እንዘግባለን።</li><li><b>ፍትሃዊነትና ሚዛናዊነት፡</b> የሁሉንም ወገን ሀሳብ በፍትሃዊነት እናቀርባለን።</li><li><b>ነፃነት፡</b> ከየትኛውም የፖለቲካ፣ የኢኮኖሚ ወይም የግል ኃይል ትዕዛዝ አንቀበልም።</li><li><b>ሰብአዊ ክብር፡</b> የሁሉንም ሰው መብት፣ ክብርና ግላዊነት እናከብራለን።</li><li><b>ተጠያቂነት፡</b> ለስህተታችን ኃላፊነት ወስደን በግልጽ እናርማለን።</li><li><b>የህዝብ ድምጽ፡</b> ድምጻቸው ለማይሰማ መድረክ እንሰጣለን።</li><li><b>የአፍሪካ ኩራት፡</b> የአፍሪካን እውቀት፣ ባህልና ታሪክ በኩራት እናቀርባለን።</li></ul>" },
+      { h: "ምን እንዘግባለን?", b: "<ul><li><b>ጤና፡</b> የጤና ምክር፣ በሽታ መከላከል፣ አመጋገብና ንፅህና።</li><li><b>ሳይንስና ቴክኖሎጂ፡</b> ፈጠራ፣ ኢንተርኔት፣ AI እና ህይወትን የሚቀይር ቴክኖሎጂ።</li><li><b>ማህበረሰብ፡</b> የማህበረሰብ ህይወት፣ ችግሮችና ስኬቶች።</li><li><b>ፖለቲካ፡</b> አስተዳደር፣ ህግና የዜግነት መብት — በሚዛናዊነት።</li><li><b>ኢኮኖሚ፡</b> ገበያ፣ ግብርና፣ ንግድና ቁጠባ።</li><li><b>ባህልና ታሪክ፡</b> የገዳ ሥርዓት፣ በዓላት፣ ቋንቋና ታሪክ።</li><li><b>ትምህርት፡</b> ለተማሪዎችና ለቤተሰቦች ዕድሎችና መመሪያዎች።</li><li><b>ስፖርት፡</b> አትሌቲክስ፣ እግር ኳስና የአትሌቶቻችን ስኬት።</li><li><b>ዓለም፡</b> ህይወታችንን የሚነኩ የዓለም ዜናዎች።</li></ul>" },
+      { h: "ለምን ባሪ ኒውስ?", b: "<ul><li><b>ፈጣን፡</b> በደካማ 2G/3G ኔትወርክም በፍጥነት ይከፈታል።</li><li><b>በሁሉም መሳሪያ፡</b> በትንሽና በትልቅ ስልክ፣ በታብሌትና በኮምፒውተር።</li><li><b>ብዙ ቋንቋዎች፡</b> Afaan Oromoo፣ English፣ አማርኛ እና ከ30 በላይ የዓለም ቋንቋዎች።</li><li><b>AI፡</b> ራስ-ሰር ማጠቃለያ፣ ዜናን በድምጽ ማዳመጥና ብልህ ፍለጋ።</li><li><b>ንፁህ ንባብ፡</b> ዜና ሲከፈት ዜናው ብቻ ይታያል።</li><li><b>ነፃ፡</b> መረጃችን ለሁሉም በነፃ ነው።</li></ul>" },
+      { h: "ነፃነትና ግልጽነት", b: "<p>ባሪ ኒውስ በየትኛውም የፖለቲካ ፓርቲ፣ የመንግስት ተቋም ወይም ድርጅት ቁጥጥር ስር አይደለም። የአርትዖት ውሳኔዎች ሙሉ በሙሉ የአርታኢያችን ናቸው። ወደፊት ማስታወቂያ ወይም ድጋፍ ቢኖር በግልጽ «ማስታወቂያ» ተብሎ ይለያል፤ በዜና ይዘታችንም ላይ ተጽዕኖ አይኖረውም።</p>" },
+      { h: "የአርማችን ትርጉም", b: "<p>አርማችን የአፍሪካ ህዝቦችን ይወክላል፡</p><ul><li>⚫ <b>ጥቁር</b> — የአፍሪካ ህዝቦች፣ ጥንካሬና ራስን መቻል።</li><li>🔴 <b>ቀይ</b> — ቁርጠኝነት፣ ፍቅርና የአባቶቻችን መስዋዕትነት።</li><li>⚪ <b>ነጭ</b> — ሰላም፣ እውነትና ንፅህና።</li><li>☀️ <b>የምትወጣዋ ፀሐይ</b> — ንጋት፣ ተስፋና አዲስ ጅማሬ።</li><li>👥 <b>እጅ ለእጅ የተያያዙ ሦስት ሰዎች</b> — የቤተሰብ፣ የማህበረሰብና የትውልድ አንድነት።</li><li>〰️ <b>ባህላዊ ጌጡ</b> — የአፍሪካ ባህልና ቅርስ።</li></ul>" },
+      { h: "ተሳትፎዎ", b: "<p>ባሪ ኒውስ የህዝብ ነው። ዜና፣ ፎቶ፣ ሀሳብ ወይም የአስተያየት ጽሑፍ ሊልኩልን ይችላሉ። የሚልኩልን ሁሉ በመጀመሪያ ይረጋገጣል፤ ከፈለጉም ማንነትዎ በሚስጥር ይጠበቃል። ዜናዎቻችንን ለወዳጆችዎ ማጋራትም እውነትን ለማስፋፋት ይረዳል።</p>" },
+      { h: "እርማትና ቅሬታ", b: "<p>እኛም ልንሳሳት እንችላለን። በዘገባችን ውስጥ ስህተት ካገኙ በ«ያግኙን» በኩል ይንገሩን። የተረጋገጠ ስህተት ወዲያውኑ ይታረማል፤ እርማቱም በግልጽ ይገለጻል።</p>" }
+    ],
+    policy: [
+      "እያንዳንዱን ዜና ቢያንስ በሁለት ታማኝ ምንጮች እናረጋግጣለን።",
+      "ዜናን (እውነታ) ከአስተያየት በግልጽ ለይተን እናቀርባለን።",
+      "የሁሉንም ተቃራኒ ወገኖች ሀሳብ በፍትሃዊነት እናቀርባለን።",
+      "በብሄር፣ በሃይማኖት ወይም በጾታ ጥላቻን የሚያነሳሱ ይዘቶችን አናትምም።",
+      "የሰዎችን በተለይም የህፃናትንና የተጎጂዎችን ግላዊነት እንጠብቃለን።",
+      "የሌሎችን ፎቶና ጽሑፍ ያለፈቃድ አንጠቀምም፤ ምንጭ እንጠቅሳለን።",
+      "የመረጃ ምንጮቻችንን ሚስጥር እንጠብቃለን።",
+      "ስህተት ሲፈጠር በግልጽና በፍጥነት እናርማለን።"
+    ],
+    close: "ባሪ ኒውስ — በእውነተኛ መረጃ፣ አዲስ ንጋት! 🌅"
+  }
+};
+const FOUNDER_T = { om: "Hundeessaa fi Gulaalaa", en: "Founder & Editor", am: "መስራችና አርታኢ" };
+
+const LANGS = [["om", "Afaan Oromoo"], ["en", "English"], ["am", "አማርኛ"], ["ti", "ትግርኛ"], ["so", "Soomaali"], ["sw", "Kiswahili"], ["ar", "العربية"], ["fr", "Français"], ["es", "Español"], ["pt", "Português"], ["de", "Deutsch"], ["it", "Italiano"], ["nl", "Nederlands"], ["sv", "Svenska"], ["no", "Norsk"], ["pl", "Polski"], ["ru", "Русский"], ["uk", "Українська"], ["tr", "Türkçe"], ["fa", "فارسی"], ["ur", "اردو"], ["hi", "हिन्दी"], ["bn", "বাংলা"], ["zh-CN", "中文"], ["ja", "日本語"], ["ko", "한국어"], ["id", "Bahasa Indonesia"], ["ms", "Bahasa Melayu"], ["ha", "Hausa"], ["yo", "Yorùbá"], ["ig", "Igbo"], ["zu", "isiZulu"], ["xh", "isiXhosa"], ["rw", "Kinyarwanda"], ["ln", "Lingála"], ["iw", "עברית"]];
+const BUILTIN = ["om", "en", "am"];
+const RTL = ["ar", "fa", "ur", "iw"];
+
+/* ================= GARGAARTOTA ================= */
+function storeGet(k = "") { try { return localStorage.getItem(k) || ""; } catch (_e) { return ""; } }
+function storeSet(k = "", v = "") { try { localStorage.setItem(k, v); } catch (_e) { /* kuusaan hin jiru */ } }
+
+/* Elementii tokko argachuu */
+function $(s = "") {
+  const el = document.querySelector(s);
+  if (!(el instanceof HTMLElement)) throw new Error("Hin argamne: " + s);
+  return el;
+}
+/* Elementoota hedduu argachuu */
+function els(s = "", root = document.body) {
+  return Array.from(root.querySelectorAll(s), function (n) { return n instanceof HTMLElement ? n : document.createElement("i"); });
+}
+function setPh(id = "", v = "") { const el = document.getElementById(id); if (el instanceof HTMLInputElement) el.placeholder = v; }
+function esc(s = "") {
+  return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return c === "&" ? "&amp;" : c === "<" ? "&lt;" : c === ">" ? "&gt;" : c === '"' ? "&quot;" : "&#39;";
+  });
+}
+function hv(s = "") { let h = 7; for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) | 0; return Math.abs(h); }
+function pick(obj = {}, k = "") { const v = Reflect.get(obj, k); return typeof v === "string" ? v : ""; }
+
+/* ================= DAATAA ================= */
+const S = Object.assign({}, SITE);
+const extSettings = Reflect.get(window, "BARII_SETTINGS");
+if (extSettings && typeof extSettings === "object") Object.assign(S, extSettings);
+if (/^\[/.test(S.owner || "")) S.owner = "";
+
+let ARTS = SEED;
+const extArticles = Reflect.get(window, "BARII_ARTICLES");
+/* Offline: oduu dhumaa bilbila dubbisaa keessatti kuusi; interneetiin yoo bade sanumaan agarsiisi */
+if (Array.isArray(extArticles)) {
+  ARTS = extArticles;
+  try { localStorage.setItem("barii_cache", JSON.stringify({ settings: extSettings || {}, articles: extArticles })); } catch (_e) { /* kuusaan guutameera */ }
+} else {
+  try {
+    const c = JSON.parse(storeGet("barii_cache") || "null");
+    if (c && Array.isArray(c.articles)) { ARTS = c.articles; Object.assign(S, c.settings || {}); }
+  } catch (_e) { /* cache hin jiru */ }
+}
+/* admin.html irraa "Ilaali" yoo tuqame, oduu hin maxxanfamin (preview) agarsiisa */
+const PREVIEW = /preview/.test(location.search);
+if (PREVIEW) {
+  try {
+    const p = JSON.parse(storeGet(/preview=draft/.test(location.search) ? "barii_data_preview" : "barii_data") || "null");
+    if (p && Array.isArray(p.articles)) { ARTS = p.articles; Object.assign(S, p.settings || {}); }
+  } catch (_e) { /* preview hin jiru */ }
+}
+ARTS = ARTS.filter(function (a) { return a && a.id && a.title && (PREVIEW || Reflect.get(a, "draft") !== true); })
+  .slice().sort(function (a, b) { return String(b.date || "").localeCompare(String(a.date || "")); });
+
+let LANG = storeGet("barii_lang") || "om";
+function ui() { return BUILTIN.indexOf(LANG) > -1 ? LANG : "en"; }
+function dict(l = "") { return l === "en" ? I18N.en : l === "am" ? I18N.am : I18N.om; }
+function T(k = "") { return pick(dict(ui()), k) || pick(I18N.en, k) || k; }
+function catName(k = "") { const c = ui() === "en" ? CATS_I18N.en : ui() === "am" ? CATS_I18N.am : CATS_I18N.om; return pick(c, k) || pick(CATS_I18N.om, k) || k; }
+function aboutFor() { return ui() === "en" ? ABOUT.en : ui() === "am" ? ABOUT.am : ABOUT.om; }
+function minText(n = 1) { return T("min").replace("{n}", String(n)); }
+function byId(id = "") { return ARTS.find(function (a) { return a.id === id; }); }
+
+function fmtDate(d = "", long = false) {
+  const t = new Date(d + "T00:00:00");
+  if (isNaN(t.getTime())) return esc(d);
+  if (ui() === "om") return (long ? OM_DAYS[t.getDay()] + ", " : "") + t.getDate() + " " + OM_MONTHS[t.getMonth()] + " " + t.getFullYear();
+  const loc = ui() === "am" ? "am-ET" : "en-GB";
+  try {
+    return new Intl.DateTimeFormat(loc, long
+      ? { weekday: "long", day: "numeric", month: "long", year: "numeric" }
+      : { day: "numeric", month: "long", year: "numeric" }).format(t);
+  } catch (_e) { return d; }
+}
+function readMin(a = SEED[0]) { return Math.max(1, Math.round(((a.body || "") + " " + (a.summary || "")).split(/\s+/).length / 200)); }
+
+let toastTimer = 0;
+function toast(m = "") {
+  const t = $("#toast"); t.textContent = m; t.classList.add("on");
+  clearTimeout(toastTimer); toastTimer = window.setTimeout(function () { t.classList.remove("on"); }, 2300);
+}
+
+/* ================= KAARDIIWWAN ================= */
+/* ================= MIIDIYAA ================= */
+function fieldStr(a = SEED[0], k = "") { const v = Reflect.get(a, k); return typeof v === "string" ? v.trim() : ""; }
+function videoOf(a = SEED[0]) { return fieldStr(a, "video"); }
+function audioOf(a = SEED[0]) { return fieldStr(a, "audio"); }
+function galleryOf(a = SEED[0]) {
+  const g = Reflect.get(a, "gallery");
+  return Array.isArray(g) ? g.filter(function (x) { return typeof x === "string" && x.length > 0; }).map(String) : [""].slice(0, 0);
+}
+/* Liinkii viidiyoo gara bifa itti ilaalamuutti jijjiiruu */
+function videoInfo(u = "") {
+  let m = u.match(/(?:youtube\.com\/(?:watch\?(?:.*&)?v=|shorts\/|embed\/|live\/)|youtu\.be\/)([\w-]{11})/);
+  if (m) return { kind: "frame", src: "https://www.youtube-nocookie.com/embed/" + m[1] + "?autoplay=1&rel=0", thumb: "https://i.ytimg.com/vi/" + m[1] + "/hqdefault.jpg", tall: /shorts\//.test(u) };
+  m = u.match(/vimeo\.com\/(?:video\/)?(\d+)/);
+  if (m) return { kind: "frame", src: "https://player.vimeo.com/video/" + m[1] + "?autoplay=1", thumb: "", tall: false };
+  m = u.match(/tiktok\.com\/.*\/video\/(\d+)/);
+  if (m) return { kind: "frame", src: "https://www.tiktok.com/embed/v2/" + m[1], thumb: "", tall: true };
+  if (/facebook\.com\/|fb\.watch\//.test(u)) return { kind: "frame", src: "https://www.facebook.com/plugins/video.php?href=" + encodeURIComponent(u) + "&show_text=false&autoplay=true", thumb: "", tall: false };
+  if (/^data:video|\.(mp4|webm|ogg|ogv|mov|m4v)(\?|#|$)/i.test(u)) return { kind: "file", src: u, thumb: "", tall: false };
+  return { kind: "link", src: u, thumb: "", tall: false };
+}
+function thumbOf(a = SEED[0]) {
+  if (a.image) return a.image;
+  const v = videoOf(a);
+  if (v) { const t = videoInfo(v).thumb; if (t) return t; }
+  const g = galleryOf(a);
+  return g.length ? g[0] : "";
+}
+function cover(a = SEED[0]) {
+  const v = videoOf(a), g = galleryOf(a), th = thumbOf(a);
+  const badges = (v ? '<span class="bv">▶ ' + T("videos") + "</span>" : "") + (g.length ? '<span class="bg">🖼 ' + g.length + "</span>" : "");
+  if (th) return '<div class="cv"><img src="' + esc(th) + '" alt="" loading="lazy" decoding="async">' + badges + "</div>";
+  const h = hv(a.id), k = CATK.indexOf(a.cat) > -1 ? a.cat : "addunyaa";
+  return '<div class="cv" style="--x:' + (20 + h % 62) + "%;--y:" + (12 + (h >> 4) % 55) + '%" aria-hidden="true"><svg class="ic"><use href="#i-' + k + '"/></svg>' + badges + "</div>";
+}
+/* Dubbisaa keessatti: viidiyoo, suuraalee fi sagalee */
+function mediaHtml(a = SEED[0]) {
+  let h = "";
+  const v = videoOf(a);
+  if (v) {
+    const info = videoInfo(v), poster = a.image || info.thumb;
+    if (info.kind === "frame") {
+      h += '<div class="vbox' + (info.tall ? " tall" : "") + '"><button class="vplay" data-src="' + esc(info.src) + '"' + (poster ? ' style="background-image:url(\'' + esc(poster) + '\')"' : "") + '><i></i><span>' + T("watch") + "</span></button></div>";
+    } else if (info.kind === "file") {
+      h += '<div class="vbox"><video controls preload="none" playsinline src="' + esc(info.src) + '"' + (poster ? ' poster="' + esc(poster) + '"' : "") + "></video></div>";
+    } else {
+      h += '<p class="vlink"><a class="pill" target="_blank" rel="noopener" href="' + esc(info.src) + '">▶ ' + T("watch") + "</a></p>";
+    }
+  } else {
+    h += cover(a);
+  }
+  const au = audioOf(a);
+  if (au) h += '<audio class="aud" controls preload="none" src="' + esc(au) + '"></audio>';
+  return h;
+}
+function galleryHtml(a = SEED[0]) {
+  const g = galleryOf(a);
+  if (!g.length) return "";
+  return '<div class="gal">' + g.map(function (src, i) { return '<button data-gi="' + i + '"><img src="' + esc(src) + '" alt="" loading="lazy" decoding="async"></button>'; }).join("") + "</div>";
+}
+function meta(a = SEED[0]) { return fmtDate(a.date || "") + " · " + minText(readMin(a)); }
+function card(a = SEED[0]) {
+  return '<a class="card" href="#/oduu/' + esc(a.id) + '">' + cover(a) + '<div class="cb"><span class="tg">' + esc(catName(a.cat)) +
+    "</span><h3>" + esc(a.title) + "</h3><p>" + esc(a.summary) + '</p><span class="mt">' + meta(a) + "</span></div></a>";
+}
+function secHead(t = "", link = "", first = false) {
+  return '<div class="sh' + (first ? " s0" : "") + '"><h2>' + t + "</h2>" + (link ? '<a href="' + link + '">' + T("all") + " →</a>" : "") + "</div>";
+}
+function emptyBox(t = "", d = "") { return '<div class="empty"><svg class="ic"><use href="#u-news"/></svg><h2>' + t + "</h2><p>" + d + "</p></div>"; }
+
+/* ================= FUULLEEN ================= */
+const app = $("#app");
+let homeLimit = 8;
+
+function viewHome() {
+  setNav("");
+  if (!ARTS.length) { app.innerHTML = emptyBox(T("emptyT"), T("emptyD")); return; }
+  const lead = ARTS.find(function (a) { return !!a.featured; }) || ARTS[0];
+  const rest = ARTS.filter(function (a) { return a !== lead; });
+  const side = rest.slice(0, 4), latest = rest.slice(4);
+  let h = '<p class="dl">' + fmtDate(new Date().toISOString().slice(0, 10), true) + "</p>" +
+    '<section class="top"><a class="lead" href="#/oduu/' + esc(lead.id) + '">' + cover(lead) +
+    '<div class="lead-t"><span class="kick">' + esc(catName(lead.cat)) + "</span><h2>" + esc(lead.title) + "</h2><p>" + esc(lead.summary) +
+    '</p><span class="mt">' + meta(lead) + "</span></div></a><div>" + secHead(T("top"), "", true) +
+    side.map(function (a, i) {
+      return '<a class="nl" href="#/oduu/' + esc(a.id) + '"><span class="num">' + (i + 1) + '</span><div><span class="tg">' + esc(catName(a.cat)) +
+        "</span><h3>" + esc(a.title) + '</h3><span class="mt">' + meta(a) + "</span></div></a>";
+    }).join("") + "</div></section>";
+  if (latest.length) {
+    h += secHead(T("latest")) + '<div class="grid">' + latest.slice(0, homeLimit).map(function (a) { return card(a); }).join("") + "</div>";
+    if (latest.length > homeLimit) h += '<button class="more" id="moreB">' + T("more") + "</button>";
+  }
+  CATK.forEach(function (k) {
+    const l = ARTS.filter(function (a) { return a.cat === k; });
+    if (l.length) h += secHead(esc(catName(k)), "#/kutaa/" + k) + '<div class="grid">' + l.slice(0, 4).map(function (a) { return card(a); }).join("") + "</div>";
+  });
+  app.innerHTML = h;
+  const mb = document.getElementById("moreB");
+  if (mb) mb.onclick = function () { const y = window.scrollY; homeLimit += 8; viewHome(); window.scrollTo(0, y); };
+}
+
+function viewMedia() {
+  setNav("viidiyoo");
+  const l = ARTS.filter(function (a) { return !!videoOf(a) || galleryOf(a).length > 0; });
+  app.innerHTML = '<div class="ph"><div class="pi"><svg class="ic"><use href="#u-play"/></svg></div><div><h1>' + T("videos") + " &amp; " + T("photos") +
+    "</h1><p>" + T("mediaD") + " · " + l.length + "</p></div></div>" +
+    (l.length ? '<div class="grid">' + l.map(function (a) { return card(a); }).join("") + "</div>" : emptyBox(T("emptyT"), T("emptyD")));
+}
+function viewCat(k = "") {
+  if (CATK.indexOf(k) < 0) { view404(); return; }
+  setNav(k);
+  const l = ARTS.filter(function (a) { return a.cat === k; });
+  app.innerHTML = '<div class="ph"><div class="pi"><svg class="ic"><use href="#i-' + k + '"/></svg></div><div><h1>' + esc(catName(k)) +
+    "</h1><p>" + l.length + " " + T("stories") + "</p></div></div>" +
+    (l.length ? '<div class="grid">' + l.map(function (a) { return card(a); }).join("") + "</div>" : emptyBox(T("emptyT"), T("emptyD")));
+}
+
+function norm(s = "") { return String(s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[’`]/g, "'"); }
+
+/* AI: barbaacha smart — jecha guutuu fi kutaa jechaatiin argata */
+function smartSearch(q = "") {
+  const toks = norm(q).split(/\s+/).filter(function (t) { return t.length > 1; });
+  return ARTS.map(function (a) {
+    const ti = norm(a.title), su = norm(a.summary), bo = norm(a.body), ca = norm(catName(a.cat) + " " + pick(CATS_I18N.om, a.cat));
+    let s = 0;
+    toks.forEach(function (t) {
+      const st = t.length > 4 ? t.slice(0, t.length - 2) : t;
+      s += ti.indexOf(t) > -1 ? 6 : ti.indexOf(st) > -1 ? 3 : 0;
+      s += su.indexOf(t) > -1 ? 3 : su.indexOf(st) > -1 ? 1.5 : 0;
+      s += bo.indexOf(t) > -1 ? 1 : bo.indexOf(st) > -1 ? 0.5 : 0;
+      s += ca.indexOf(t) > -1 ? 4 : 0;
+    });
+    return { a: a, s: s };
+  }).filter(function (x) { return x.s > 0; })
+    .sort(function (x, y) { return y.s - x.s; })
+    .map(function (x) { return x.a; });
+}
+
+function viewSearch(q = "") {
+  setNav("");
+  const l = smartSearch(q);
+  app.innerHTML = '<div class="ph"><div class="pi"><svg class="ic"><use href="#u-search"/></svg></div><div><h1>“' + esc(q) +
+    "”</h1><p>" + l.length + " " + T("results") + "</p></div></div>" +
+    (l.length ? '<div class="grid">' + l.map(function (a) { return card(a); }).join("") + "</div>" : emptyBox(T("noRes"), ""));
+}
+
+function view404() {
+  setNav("");
+  app.innerHTML = emptyBox("404", T("nf")) + '<p style="text-align:center"><a class="more" style="display:inline-flex" href="#/">' + T("goHome") + "</a></p>";
+}
+
+/* ================= DUBBISAA (oduu qofa, iskiriinii guutuu) ================= */
+const rd = $("#rd"), rdIn = $("#rdIn"), dock = $("#dock");
+let curArt = byId("");
+const FS = [16.5, 19, 21, 23.5];
+let fsIdx = Number(storeGet("barii_fs") || 1) % FS.length;
+
+function body2html(t = "") {
+  return String(t || "").split(/\n\s*\n/).map(function (p) {
+    p = p.trim();
+    if (!p) return "";
+    if (p.indexOf("## ") === 0) return "<h2>" + esc(p.slice(3)) + "</h2>";
+    if (p.indexOf("> ") === 0) return "<blockquote>" + esc(p.slice(2)) + "</blockquote>";
+    return "<p>" + esc(p).replace(/\n/g, "<br>") + "</p>";
+  }).join("");
+}
+
+function openReader(id = "") {
+  const a = byId(id);
+  if (!a) { closeReader(); view404(); return; }
+  curArt = a; stopSpeak();
+  const url = location.href.split("#")[0] + "#/oduu/" + encodeURIComponent(a.id);
+  const u = encodeURIComponent(url), t = encodeURIComponent(a.title);
+  rdIn.style.setProperty("--fs", FS[fsIdx] + "px");
+  rdIn.innerHTML = (PREVIEW ? '<p style="margin:0 0 14px"><a class="pill" id="backAdmin" href="admin.html" onclick="if(document.referrer){history.back();return false;}">← Gara Admin deebi\'i</a></p>' : "") +
+    '<span class="kick">' + esc(catName(a.cat)) + "</span><h1>" + esc(a.title) + '</h1><p class="rs">' + esc(a.summary) + "</p>" +
+    '<div class="rm"><span>' + T("by") + ": <b>" + esc(a.author || "Barii News") + "</b></span><span>" + fmtDate(a.date || "") + "</span><span>" + minText(readMin(a)) + "</span></div>" +
+    mediaHtml(a) + '<div id="aiBox"></div><div class="rb">' + body2html(a.body || "") + "</div>" + galleryHtml(a) +
+    '<div class="rend"><span>' + T("share") + "</span>" +
+    '<a class="pill" target="_blank" rel="noopener" href="https://wa.me/?text=' + t + "%20" + u + '">WhatsApp</a>' +
+    '<a class="pill" target="_blank" rel="noopener" href="https://t.me/share/url?url=' + u + "&text=" + t + '">Telegram</a>' +
+    '<a class="pill" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=' + u + '">Facebook</a>' +
+    '<a class="pill" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=' + u + "&text=" + t + '">X</a>' +
+    '<button class="pill" id="cpL">🔗 ' + T("copy") + "</button></div>";
+  $("#cpL").onclick = function () { copyLink(url); };
+  $("#dAi").classList.remove("on");
+  document.title = a.title + " | Barii News";
+  rd.classList.add("on"); rd.scrollTop = 0; dock.classList.remove("hide"); lock(true);
+  $("#rdP").style.width = "0";
+}
+function closeReader() {
+  if (!rd.classList.contains("on")) return;
+  rd.classList.remove("on"); stopSpeak(); curArt = undefined; rdIn.innerHTML = ""; lbClose(); document.title = "Barii News";
+  if (!mdl.classList.contains("on") && !drw.classList.contains("on")) lock(false);
+}
+function leaveReader() { if (navCount > 0) history.back(); else location.hash = lastBase; }
+$("#rdX").onclick = leaveReader;
+
+let lastY = 0;
+rd.addEventListener("scroll", function () {
+  const y = rd.scrollTop, m = rd.scrollHeight - rd.clientHeight;
+  $("#rdP").style.width = (m > 0 ? y / m * 100 : 0) + "%";
+  if (y > lastY + 4 && y > 200 && y < m - 40) dock.classList.add("hide");
+  if (y < lastY - 4 || y >= m - 40) dock.classList.remove("hide");
+  lastY = y;
+}, { passive: true });
+
+function copyLink(url = "") {
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(url).then(function () { toast(T("copied")); }, function () { window.prompt("Link:", url); });
+  } else window.prompt("Link:", url);
+}
+$("#dSh").onclick = function () {
+  if (!curArt) return;
+  const url = location.href;
+  if (typeof navigator.share === "function") navigator.share({ title: curArt.title, text: curArt.summary, url: url }).catch(function () { /* dhiifame */ });
+  else copyLink(url);
+};
+$("#dFs").onclick = function () {
+  fsIdx = (fsIdx + 1) % FS.length; storeSet("barii_fs", String(fsIdx));
+  rdIn.style.setProperty("--fs", FS[fsIdx] + "px");
+};
+
+/* ---- AI: Cuunfaa ofumaan (meeshaa kee irratti, interneetii malee) ---- */
+const STOP = ["fi", "kan", "ni", "kana", "sana", "irratti", "keessatti", "akka", "yoo", "isaan", "inni", "ishee", "isa", "ykn", "garuu", "immoo", "ammoo",
+  "the", "and", "of", "to", "in", "is", "for", "that", "on", "with", "are", "this", "be", "as", "by", "it", "from"];
+let LETTERS = /[a-z']+/g;
+try { LETTERS = new RegExp("[\\p{L}']+", "gu"); } catch (_e) { /* browser moofaa */ }
+
+function words(s = "") {
+  return (s.toLowerCase().match(LETTERS) || [""]).filter(function (w) { return w.length > 2 && STOP.indexOf(w) < 0; });
+}
+function summarize(text = "", n = 3) {
+  const sents = (text.replace(/\s+/g, " ").match(/[^.!?።]+[.!?።]?/g) || [""])
+    .map(function (s) { return s.trim(); })
+    .filter(function (s) { return s.split(" ").length >= 5; });
+  if (sents.length <= n) return sents;
+  const f = new Map([["", 0]]);
+  sents.forEach(function (s) { words(s).forEach(function (w) { f.set(w, (f.get(w) || 0) + 1); }); });
+  return sents.map(function (s, i) {
+    const ws = words(s);
+    let sc = ws.reduce(function (sum, w) { return sum + (f.get(w) || 0); }, 0) / Math.pow(ws.length || 1, 0.55);
+    if (i === 0) sc *= 1.35;
+    return { s: s, i: i, sc: sc };
+  }).sort(function (a, b) { return b.sc - a.sc; }).slice(0, n)
+    .sort(function (a, b) { return a.i - b.i; })
+    .map(function (x) { return x.s; });
+}
+$("#dAi").onclick = function () {
+  const box = $("#aiBox"), btn = $("#dAi");
+  if (box.innerHTML) { box.innerHTML = ""; btn.classList.remove("on"); return; }
+  const txt = els(".rb p,.rb blockquote", rdIn).map(function (e) { return e.innerText; }).join(" ");
+  const pts = summarize(txt, 3);
+  box.innerHTML = '<div class="ai"><b><svg class="ic"><use href="#u-spark"/></svg>' + T("aiT") + "</b><ul>" +
+    pts.map(function (p) { return "<li>" + esc(p) + "</li>"; }).join("") + "</ul><small>" + T("aiNote") + "</small></div>";
+  btn.classList.add("on");
+  rd.scrollTo({ top: box.offsetTop - 70, behavior: "smooth" });
+};
+
+/* ---- Sagaleen dubbisuu ---- */
+let speaking = false;
+function stopSpeak() {
+  if ("speechSynthesis" in window) window.speechSynthesis.cancel();
+  speaking = false; updDock();
+}
+$("#dTts").onclick = function () {
+  if (!("speechSynthesis" in window)) { toast(T("noTts")); return; }
+  const ss = window.speechSynthesis;
+  if (speaking) { stopSpeak(); return; }
+  const h1 = rdIn.querySelector("h1");
+  const all = [h1 ? h1.textContent || "" : ""].concat(els(".rb h2,.rb p,.rb blockquote", rdIn).map(function (e) { return e.innerText; })).join(". ");
+  const parts = all.match(/[^.!?።]+[.!?።]?/g) || [all];
+  const code = pick({ om: "om-ET", en: "en-US", am: "am-ET" }, LANG) || LANG;
+  const voice = ss.getVoices().find(function (v) { return v.lang.toLowerCase().indexOf(code.slice(0, 2)) === 0; });
+  ss.cancel(); speaking = true; updDock();
+  parts.forEach(function (p, i) {
+    const u = new SpeechSynthesisUtterance(p.trim());
+    u.lang = code; u.rate = 0.95;
+    if (voice) u.voice = voice;
+    if (i === parts.length - 1) u.onend = function () { speaking = false; updDock(); };
+    ss.speak(u);
+  });
+};
+function updDock() {
+  $("#dAi span").textContent = T("ai");
+  $("#dFs span").textContent = T("size");
+  $("#dSh span").textContent = T("share");
+  $("#dTts span").textContent = speaking ? T("stop") : T("listen");
+  $("#dTts").classList.toggle("on", speaking);
+}
+
+/* ================= MODAL XIQQAA ================= */
+const mdl = $("#mdl"), mC = $("#mC"), mBox = $("#mdl .mdl-b");
+
+function openModal(kind = "") {
+  const A = aboutFor();
+  if (kind === "waa-ee-keenya") {
+    mC.innerHTML = '<div class="mlogo"><svg><use href="#logo"/></svg><div><h2>' + T("about") + '</h2><p class="sub">' + T("tagline") + "</p></div></div>" +
+      A.intro.map(function (p) { return "<p>" + p + "</p>"; }).join("") +
+      '<div class="acc">' + A.sections.map(function (s, i) {
+        return "<details" + (i === 0 ? " open" : "") + "><summary>" + s.h + "</summary><div>" + s.b + "</div></details>";
+      }).join("") +
+      "<details><summary>" + T("policy") + "</summary><div><ul>" + A.policy.map(function (p) { return "<li>" + p + "</li>"; }).join("") + "</ul></div></details>" +
+      (S.owner ? "<details open><summary>" + pick(FOUNDER_T, ui()) + "</summary><div><p><b>" + esc(S.owner) + "</b> · " + esc(S.founded) + "</p></div></details>" : "") +
+      "</div>" +
+      '<p class="aclose">' + A.close + '</p><p style="text-align:center"><a class="pill" href="#/nu-qunnamaa">✉ ' + T("contact") + "</a></p>";
+  } else if (kind === "nu-qunnamaa") {
+    let c = "";
+    if (S.email) c += '<a href="mailto:' + esc(S.email) + '"><i>✉</i><span>' + T("email") + "<br><small>" + esc(S.email) + "</small></span></a>";
+    if (S.phone) c += '<a href="tel:' + esc(S.phone.replace(/\s/g, "")) + '"><i>☎</i><span>' + T("phone") + "<br><small>" + esc(S.phone) + "</small></span></a>";
+    if (S.location) c += "<div><i>⌖</i><span>" + T("loc") + "<br><small>" + esc(S.location) + "</small></span></div>";
+    socials().forEach(function (s) { c += '<a target="_blank" rel="noopener" href="' + esc(s[1]) + '"><i>' + s[2] + "</i><span>" + s[0] + "</span></a>"; });
+    mC.innerHTML = "<h2>" + T("contact") + '</h2><p class="sub">' + T("cNote") + '</p><div class="clist">' + c + "</div>";
+  } else if (kind === "naamusa") {
+    mC.innerHTML = "<h2>" + T("policy") + '</h2><ul style="margin-top:12px">' + A.policy.map(function (p) { return "<li>" + p + "</li>"; }).join("") + "</ul>";
+  } else if (kind === "lang") {
+    mC.innerHTML = "<h2>" + T("chooseLang") + '</h2><p class="sub">' + T("langNote") + '</p><div class="langs notranslate" translate="no">' +
+      LANGS.map(function (l) { return '<button data-l="' + l[0] + '" class="' + (l[0] === LANG ? "on" : "") + '"><span>' + l[1] + "</span><small>" + l[0].slice(0, 2) + "</small></button>"; }).join("") + "</div>";
+    els("[data-l]", mC).forEach(function (b) { b.onclick = function () { closeModalUI(); setLang(b.dataset.l || "om"); }; });
+  }
+  mdl.classList.add("on"); mBox.scrollTop = 0; lock(true);
+}
+function closeModal() {
+  if (!mdl.classList.contains("on")) return;
+  mdl.classList.remove("on");
+  if (!rd.classList.contains("on") && !drw.classList.contains("on")) lock(false);
+}
+function closeModalUI() {
+  const routed = /^#\/(waa-ee-keenya|nu-qunnamaa|naamusa)/.test(location.hash);
+  closeModal();
+  if (routed) { if (navCount > 0) history.back(); else location.hash = lastBase; }
+}
+$("#mX").onclick = closeModalUI;
+mdl.addEventListener("click", function (e) { if (e.target === mdl) closeModalUI(); });
+
+/* ================= MENU ================= */
+const drw = $("#drw"), scrim = $("#scrim");
+function openDrawer() { drw.classList.add("on"); scrim.classList.add("on"); drw.setAttribute("aria-hidden", "false"); lock(true); }
+function closeDrawer() {
+  drw.classList.remove("on"); scrim.classList.remove("on"); drw.setAttribute("aria-hidden", "true");
+  if (!rd.classList.contains("on") && !mdl.classList.contains("on")) lock(false);
+}
+$("#mBtn").onclick = openDrawer;
+$("#dX").onclick = closeDrawer;
+scrim.onclick = closeDrawer;
+drw.addEventListener("click", function (e) {
+  const el = e.target;
+  if (el instanceof Element && el.closest("a")) closeDrawer();
+});
+function lock(on = false) { document.body.classList.toggle("lock", on); }
+
+/* ================= BARBAACHA ================= */
+function doSearch(v = "") { v = v.trim(); if (v) location.hash = "#/barbaadi/" + encodeURIComponent(v); }
+$("#sBtn").onclick = function () { const b = $("#sBar"); b.classList.toggle("on"); if (b.classList.contains("on")) $("#q").focus(); };
+$("#q").addEventListener("keydown", function (e) {
+  const inp = e.target;
+  if (e.key !== "Enter" || !(inp instanceof HTMLInputElement)) return;
+  doSearch(inp.value); $("#sBar").classList.remove("on"); inp.blur();
+});
+$("#dQ").addEventListener("keydown", function (e) {
+  const inp = e.target;
+  if (e.key !== "Enter" || !(inp instanceof HTMLInputElement)) return;
+  doSearch(inp.value); closeDrawer(); inp.blur();
+});
+
+/* ================= AFAAN JIJJIIRUU (AI hiikkaa) ================= */
+let gtLoaded = false, gtBusy = false, gtTarget = "";
+function setLang(l = "om") {
+  const wasGT = LANG !== "om";
+  LANG = l; storeSet("barii_lang", l);
+  if (l === "om" && wasGT && gtLoaded) { clearGT(); location.reload(); return; }
+  renderChrome(); baseKey = ""; route();
+  if (l !== "om") loadGT(l);
+}
+function gtApi() {
+  const g = Reflect.get(window, "google");
+  return g && g.translate && g.translate.TranslateElement ? g.translate : null;
+}
+function loadGT(target = "") {
+  gtTarget = target;
+  if (gtApi()) { applyGT(); return; }
+  if (gtBusy) return;
+  gtBusy = true;
+  toast(T("translating"));
+  Reflect.set(window, "bariiGT", function () {
+    const api = gtApi();
+    if (!api) { toast(T("gtFail")); return; }
+    new api.TranslateElement({ autoDisplay: false }, "gt");
+    gtLoaded = true; applyGT();
+  });
+  const s = document.createElement("script");
+  s.src = "https://translate.google.com/translate_a/element.js?cb=bariiGT";
+  s.async = true;
+  s.onerror = function () { gtBusy = false; toast(T("gtFail")); };
+  document.head.appendChild(s);
+}
+function applyGT() {
+  let n = 0;
+  const tryIt = function () {
+    const c = document.querySelector(".goog-te-combo");
+    if (c instanceof HTMLSelectElement && c.options.length > 1) { c.value = gtTarget; c.dispatchEvent(new Event("change")); }
+    else if (n++ < 60) window.setTimeout(tryIt, 200);
+  };
+  tryIt();
+}
+function clearGT() {
+  const ex = "googtrans=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/";
+  document.cookie = ex;
+  document.cookie = ex + ";domain=" + location.hostname;
+  document.cookie = ex + ";domain=." + location.hostname;
+}
+
+/* ================= QAAMA WEBSITE ================= */
+function socials() {
+  return [["Facebook", S.facebook, "f"], ["Telegram", S.telegram, "➤"], ["YouTube", S.youtube, "▶"], ["TikTok", S.tiktok, "♪"], ["X", S.x, "𝕏"]]
+    .filter(function (s) { return !!s[1]; });
+}
+function setNav(k = "") { els("#nav a,#dNav a").forEach(function (a) { a.classList.toggle("on", a.dataset.k === k); }); }
+function langName(code = "") { const f = LANGS.find(function (x) { return x[0] === code; }); return f ? f[1] : code; }
+
+function renderChrome() {
+  const html = document.documentElement;
+  html.lang = LANG; html.dir = RTL.indexOf(LANG) > -1 ? "rtl" : "ltr";
+  $("#lCode").textContent = LANG.slice(0, 2).toUpperCase();
+  setPh("q", T("searchPh")); setPh("dQ", T("searchPh"));
+  const hasMedia = ARTS.some(function (a) { return !!videoOf(a) || galleryOf(a).length > 0; });
+  $("#nav").innerHTML = '<a href="#/" data-k="">' + T("home") + "</a>" + (hasMedia ? '<a href="#/viidiyoo" data-k="viidiyoo">▶ ' + T("videos") + "</a>" : "") +
+    CATK.map(function (k) { return '<a href="#/kutaa/' + k + '" data-k="' + k + '">' + esc(catName(k)) + "</a>"; }).join("");
+  $("#dNav").innerHTML = '<a href="#/" data-k=""><svg class="ic"><use href="#i-home"/></svg>' + T("home") + "</a>" +
+    (hasMedia ? '<a href="#/viidiyoo" data-k="viidiyoo"><svg class="ic"><use href="#u-play"/></svg>' + T("videos") + " &amp; " + T("photos") + "</a>" : "") +
+    CATK.map(function (k) { return '<a href="#/kutaa/' + k + '" data-k="' + k + '"><svg class="ic"><use href="#i-' + k + '"/></svg>' + esc(catName(k)) + "</a>"; }).join("");
+  $("#dLangT").textContent = T("lang");
+  const isBuiltin = BUILTIN.indexOf(LANG) > -1;
+  $("#dLang").innerHTML = BUILTIN.map(function (l) {
+    return '<button data-l="' + l + '" class="notranslate' + (l === LANG ? " on" : "") + '" translate="no">' + langName(l) + "</button>";
+  }).join("") + '<button id="dMore" class="' + (isBuiltin ? "" : "on") + '">🌐 ' + (isBuiltin ? T("other") : esc(langName(LANG))) + " …</button>";
+  els("#dLang [data-l]").forEach(function (b) { b.onclick = function () { closeDrawer(); setLang(b.dataset.l || "om"); }; });
+  $("#dMore").onclick = function () { closeDrawer(); openModal("lang"); };
+  $("#themeL").textContent = T("dark");
+  const links = [["waa-ee-keenya", T("about")], ["nu-qunnamaa", T("contact")], ["naamusa", T("policy")]];
+  const linkHtml = links.map(function (l) { return '<button data-m="' + l[0] + '">' + l[1] + "</button>"; }).join("");
+  $("#dSmall").innerHTML = linkHtml;
+  $("#fLinks").innerHTML = linkHtml + '<button data-lang="1">🌐 ' + T("lang") + "</button>";
+  els("[data-m]").forEach(function (b) { b.onclick = function () { closeDrawer(); location.hash = "#/" + (b.dataset.m || ""); }; });
+  $("[data-lang]").onclick = function () { openModal("lang"); };
+  $("#fTag").textContent = T("tagline");
+  $("#fCats").innerHTML = CATK.map(function (k) { return '<a href="#/kutaa/' + k + '">' + esc(catName(k)) + "</a>"; }).join("");
+  $("#soc").innerHTML = socials().map(function (s) { return '<a href="' + esc(s[1]) + '" target="_blank" rel="noopener" aria-label="' + s[0] + '">' + s[2] + "</a>"; }).join("");
+  $("#copy").textContent = "© " + new Date().getFullYear() + " Barii News. " + T("rights");
+  $("#tickL").textContent = T("breaking");
+  const tk = ARTS.slice(0, 6);
+  $("#tick").style.display = tk.length ? "" : "none";
+  $("#tickT").innerHTML = tk.map(function (a) { return '<a href="#/oduu/' + esc(a.id) + '">' + esc(a.title) + "</a>"; }).join("");
+  $("#off").textContent = T("offline");
+  updDock();
+}
+
+/* ================= VIIDIYOO TAPHACHIISUU fi SUURAALEE ================= */
+let lbList = [""].slice(0, 0), lbIdx = 0;
+function lbShow(i = 0) {
+  if (!lbList.length) return;
+  lbIdx = (i + lbList.length) % lbList.length;
+  const img = document.getElementById("lbI");
+  if (img instanceof HTMLImageElement) img.src = lbList[lbIdx];
+  $("#lbC").textContent = (lbIdx + 1) + " / " + lbList.length;
+  $("#lbP").style.display = $("#lbN").style.display = lbList.length > 1 ? "" : "none";
+  $("#lbx").classList.add("on");
+}
+function lbClose() { $("#lbx").classList.remove("on"); }
+$("#lbX").onclick = lbClose;
+$("#lbP").onclick = function () { lbShow(lbIdx - 1); };
+$("#lbN").onclick = function () { lbShow(lbIdx + 1); };
+$("#lbx").addEventListener("click", function (e) { if (e.target === $("#lbx")) lbClose(); });
+rdIn.addEventListener("click", function (e) {
+  const el = e.target instanceof Element ? e.target : null;
+  if (!el) return;
+  const play = el.closest(".vplay");
+  if (play instanceof HTMLElement && play.parentElement) {
+    const f = document.createElement("iframe");
+    f.src = play.dataset.src || "";
+    f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+    f.allowFullscreen = true;
+    f.title = T("watch");
+    play.parentElement.replaceChild(f, play);
+    return;
+  }
+  const gb = el.closest("[data-gi]");
+  if (gb instanceof HTMLElement && curArt) { lbList = galleryOf(curArt); lbShow(Number(gb.dataset.gi || 0)); }
+});
+
+/* ================= KARAA (ROUTER) ================= */
+let baseKey = "";
+let lastBase = "#/", navCount = -1;
+const MODALS = ["waa-ee-keenya", "nu-qunnamaa", "naamusa"];
+
+function route() {
+  navCount++;
+  const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
+  const parts = h.split("/"), p0 = parts[0] || "", arg = parts.slice(1).join("/");
+  if (p0 === "oduu") { closeModal(); if (!baseKey) renderBase("", ""); openReader(arg); return; }
+  closeReader();
+  if (MODALS.indexOf(p0) > -1) { if (!baseKey) renderBase("", ""); openModal(p0); return; }
+  closeModal();
+  if (p0 + "|" + arg !== baseKey) { renderBase(p0, arg); window.scrollTo(0, 0); }
+  lastBase = location.hash || "#/";
+}
+function renderBase(p0 = "", arg = "") {
+  baseKey = p0 + "|" + arg; document.title = "Barii News";
+  if (!p0) viewHome();
+  else if (p0 === "kutaa") viewCat(arg);
+  else if (p0 === "viidiyoo") viewMedia();
+  else if (p0 === "barbaadi") viewSearch(arg);
+  else view404();
+}
+
+/* ================= JALQABUU ================= */
+let theme = storeGet("barii_theme");
+if (!theme && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
+document.documentElement.dataset.theme = theme || "light";
+$("#themeT").onclick = function () {
+  const t = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = t; storeSet("barii_theme", t);
+};
+$("#lBtn").onclick = function () { openModal("lang"); };
+document.addEventListener("keydown", function (e) {
+  if (e.key !== "Escape") return;
+  if ($("#lbx").classList.contains("on")) lbClose();
+  else if (mdl.classList.contains("on")) closeModalUI();
+  else if (drw.classList.contains("on")) closeDrawer();
+  else if (rd.classList.contains("on")) leaveReader();
+});
+function net() { $("#off").style.display = navigator.onLine ? "none" : "block"; }
+window.addEventListener("online", net);
+window.addEventListener("offline", net);
+net();
+if (PREVIEW) document.body.insertAdjacentHTML("afterbegin", '<div class="prev">👁️ Ilaalcha duraa — namoonni biroo hin argan · <a href="admin.html" onclick="if(document.referrer){history.back();return false;}">← Gara Admin deebi\'i</a></div>');
+
+renderChrome();
+window.addEventListener("hashchange", route);
+route();
+if (LANG !== "om") loadGT(LANG);
+/* sw.js amma hin barbaachisu: kan duraan galmaa'e yoo jiraate ni haqama */
+if ("serviceWorker" in navigator && /^https?:/.test(location.protocol)) {
+  navigator.serviceWorker.getRegistrations().then(function (rs) { rs.forEach(function (r) { r.unregister(); }); }).catch(function () { /* hin jiru */ });
+}
+})();
+</script>
+</body>
+</html>
